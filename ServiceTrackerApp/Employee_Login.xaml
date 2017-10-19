@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ServiceTrackerApp.Employee_Login" Title = "Employee Login">
+
+    <ContentPage.Content>
+        
+        <StackLayout BackgroundColor = "#d3d3d3">
+            
+            <Label Text = "Employee Login" HorizontalOptions = "Center" FontSize = "35" TextColor = "Black" Margin = "30">
+            </Label>
+
+            <Entry x:Name = "usernameField" Placeholder = "Username" Margin = "30, 150, 30, 0" TextColor = "Black">
+            </Entry>
+
+            <Entry x:Name = "passwordField" Placeholder = "Password" IsPassword = "true" Margin = "30, 0, 30, 0" TextColor = "Black">
+            </Entry>
+
+            <Button Text = "Login" Margin = "30" BackgroundColor = "Gray" TextColor = "White" Clicked = "Handle_Clicked">
+            </Button>
+        </StackLayout>
+        
+	</ContentPage.Content>
+</ContentPage>

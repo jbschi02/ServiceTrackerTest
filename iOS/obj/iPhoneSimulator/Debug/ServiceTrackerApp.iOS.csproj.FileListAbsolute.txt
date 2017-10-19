@@ -1,0 +1,122 @@
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.exe
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.pdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.pdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.pdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.xml
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll.mdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.pdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.xml
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ar/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ca/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/cs/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/da/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/de/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/el/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/es/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/fi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/fr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/he/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/hi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/hr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/hu/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/id/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/it/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ja/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ko/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ms/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/nb/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/nl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/pl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/pt/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ro/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/ru/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/sk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/sv/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/th/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/tr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/uk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/vi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.csprojResolveAssemblyReference.cache
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.csproj.CoreCompileInputs.cache
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.exe
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.pdb
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-11.0/ibtool/_BundleResourceWithLogicalName.items
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-11.0/actool/_PartialAppManifest.items
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-11.0/actool/_BundleResourceWithLogicalName.items
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-11.0/optimized/
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
+/Users/Gargai/Projects/ServiceTrackerApp/iOS/bin/iPhoneSimulator/Debug/System.Json.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.exe
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.pdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/System.Json.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.pdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.pdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.xml
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll.mdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.pdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.xml
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ar/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ca/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/cs/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/da/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/de/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/el/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/es/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/fi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/fr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/he/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/hi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/hr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/hu/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/id/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/it/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ja/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ko/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ms/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/nb/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/nl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/pl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/pt/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ro/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ru/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/sk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/sv/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/th/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/tr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/uk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/vi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_PartialAppManifest.items
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_BundleResourceWithLogicalName.items
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.csprojResolveAssemblyReference.cache
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.csproj.CoreCompileInputs.cache
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.exe
+/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/obj/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.pdb
