@@ -6,9 +6,9 @@
     <Files>
       <File FileName="ServiceTrackerApp/Employee_Options.xaml.cs" Line="1" Column="1" />
       <File FileName="ServiceTrackerApp/Employee_Options.xaml" Line="44" Column="1" />
-      <File FileName="ServiceTrackerApp/Employee_Login.xaml.cs" Line="88" Column="12" />
-      <File FileName="ServiceTrackerApp/GetTest.xaml.cs" Line="38" Column="1" />
-      <File FileName="ServiceTrackerApp/User.cs" Line="9" Column="45" />
+      <File FileName="ServiceTrackerApp/Employee_Login.xaml.cs" Line="126" Column="1" />
+      <File FileName="ServiceTrackerApp/GetTest.xaml.cs" Line="68" Column="6" />
+      <File FileName="ServiceTrackerApp/User.cs" Line="61" Column="183" />
       <File FileName="ServiceTrackerApp/Jobs.cs" Line="6" Column="33" />
       <File FileName="iOS/Main.cs" Line="5" Column="18" />
       <File FileName="ServiceTrackerTest.git Status" />

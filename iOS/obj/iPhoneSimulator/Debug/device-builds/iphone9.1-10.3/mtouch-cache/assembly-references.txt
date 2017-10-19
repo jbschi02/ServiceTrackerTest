@@ -1,12 +1,12 @@
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.exe
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/iOS/bin/iPhoneSimulator/Debug/ServiceTrackerApp.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Mono.Security.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.Xml.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.Core.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.ComponentModel.Composition.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Collections.dll
@@ -21,22 +21,24 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.IO.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Dynamic.Runtime.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Threading.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.Net.Http.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.Runtime.Serialization.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.ServiceModel.Internals.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/ServiceTrackerApp/bin/Debug/ServiceTrackerApp.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/ServiceTrackerApp.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/ServiceTrackerApp/bin/Debug/System.Json.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/System.Json.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/BouncyCastle.Crypto.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Net.Requests.dll
-/Users/johnschieman/Downloads/ServiceTrackerApp 2/ServiceTrackerApp/bin/Debug/Newtonsoft.Json.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/bouncy_castle_hmac_sha_pcl.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/Newtonsoft.Json.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Xml.XDocument.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.12.0.20/lib/mono/Xamarin.iOS/Facades/System.Runtime.Serialization.Primitives.dll

@@ -10,6 +10,8 @@ using System.Json;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.Security.Cryptography;
 
 using Xamarin.Forms;
 
@@ -33,8 +35,8 @@ namespace ServiceTrackerApp
             {
                 if (await CheckValidLogin(usernameField.Text, passwordField.Text))
                 {
-                    
-                    await Navigation.PushAsync(new GetTest());
+                    App.Current.MainPage = new GetTest();
+                    //await Navigation.PushAsync(new GetTest());
                 }
                 else
                 {
@@ -45,39 +47,79 @@ namespace ServiceTrackerApp
 
         async Task<bool> CheckValidLogin(string username, string password)
         {
-            JsonValue json = await getUserInfoAsync(username);
-            //bool isValidJSON = await CheckValidJSON(json);
-            return true;
-        }
-
-		private async Task<JsonValue> getUserInfoAsync(string username)
-		{
-            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.users/";
-            url += username;
+			string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.users/";
+			url += username;
 			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
 			request.ContentType = "application/json";
 			request.Method = "GET";
+            JsonValue jsonDoc = null;
 
 			using (WebResponse response = await request.GetResponseAsync())
 			{
 				using (Stream stream = response.GetResponseStream())
 				{
-                    JsonValue jsonDoc = null;
-                    try
-                    {
+					try
+					{
 						jsonDoc = await Task.Run(() => JsonObject.Load(stream));
-						System.Diagnostics.Debug.WriteLine("Response: {0}", jsonDoc.ToString());
-                    }
-                    catch (System.ArgumentException)
-                    {
-                        //jsonDoc = null;
-                    }
-                    string jsoncheck = jsonDoc.ToString();
-                    System.Diagnostics.Debug.WriteLine("Doc type: {0}", jsoncheck);
-					return jsonDoc;
+					}
+					catch (System.ArgumentException)
+					{
+                        return false;
+					}
 				}
 			}
 
+            User user = new User();
+            await Task.Run(() => user = ParseJSONToUser(jsonDoc, user));
+            System.Diagnostics.Debug.WriteLine(user.toString());
+
+            string compareHash = "";
+            await Task.Run(() => compareHash = getCompareHash(user.getpasswordSalt(), password));
+
+
+
+            if (compareHash.Equals(user.getpasswordHash()))
+            {
+                return true;
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine(compareHash);
+                return false;
+            }
+        }
+
+        private User ParseJSONToUser(JsonValue json, User user)
+        {
+            JsonObject jsonObject = json as JsonObject;
+
+            user.setUserID((string)jsonObject["username"]);
+            user.setisManager((bool)jsonObject["manager"]);
+            user.setpasswordHash((string)jsonObject["passwordHash"]);
+            user.setpasswordSalt((string)jsonObject["salt"]);
+
+            return user;
+        }
+
+        private string getCompareHash(string salt, string password)
+        {
+            string result = "";
+
+            string temp = salt + password;
+            result = sha256(temp);
+
+            return result;
+        }
+
+        private string sha256(string text)
+		{
+            var encData = Encoding.UTF8.GetBytes(text);
+			Org.BouncyCastle.Crypto.Digests.Sha256Digest myHash = new Org.BouncyCastle.Crypto.Digests.Sha256Digest();
+            byte[] msgBytes = System.Text.ASCIIEncoding.ASCII.GetBytes(text);
+            myHash.BlockUpdate(msgBytes, 0, msgBytes.Length);
+			byte[] compArr = new byte[myHash.GetDigestSize()];
+            myHash.DoFinal(compArr, 0);
+            return Convert.ToBase64String(compArr);
 		}
     }
 }
