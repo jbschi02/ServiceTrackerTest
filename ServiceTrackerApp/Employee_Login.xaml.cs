@@ -107,19 +107,20 @@ namespace ServiceTrackerApp
 
             string temp = salt + password;
             result = sha256(temp);
+            result = result.ToLower();
 
             return result;
         }
 
         private string sha256(string text)
 		{
-            var encData = Encoding.UTF8.GetBytes(text);
+            //var encData = Encoding.UTF8.GetBytes(text);
 			Org.BouncyCastle.Crypto.Digests.Sha256Digest myHash = new Org.BouncyCastle.Crypto.Digests.Sha256Digest();
             byte[] msgBytes = System.Text.ASCIIEncoding.ASCII.GetBytes(text);
             myHash.BlockUpdate(msgBytes, 0, msgBytes.Length);
 			byte[] compArr = new byte[myHash.GetDigestSize()];
             myHash.DoFinal(compArr, 0);
-            return Convert.ToBase64String(compArr);
+            return BitConverter.ToString(compArr).Replace("-", string.Empty);
 		}
     }
 }
