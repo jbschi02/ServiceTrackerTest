@@ -7,13 +7,13 @@ namespace ServiceTrackerApp
 
         public double Cost { get; set; }
 
-        public DateTime jobDate { get; set; }
+        public DateTime Date { get; set; }
 
         public int JobID { get; set; }
 
         public string ServiceType { get; set; }
 
-            public string techid { get; set; }
+        public string tid { get; set; }
         }
     }
 

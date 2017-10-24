@@ -61,8 +61,8 @@ namespace ServiceTrackerApp
 			{
 				Custname = "jackson",
 				Cost = 222.03,
-				jobDate = DateTime.Now,
-				techid = "jackED",
+				Date = DateTime.Now,
+				tid = "jackED",
 				JobID = 1,
 				ServiceType = "Repair"
 			};

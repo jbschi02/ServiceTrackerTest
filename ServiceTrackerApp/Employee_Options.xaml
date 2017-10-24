@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ServiceTrackerApp.Employee_Options">
-
-    <ContentPage Title = "Create Job">
-        
-        <ContentPage.Content>
-            
-            <StackLayout BackgroundColor = "#d3d3d3">
-                <Label Text = "Create Job" HorizontalOptions = "Center" FontSize = "35" TextColor = "Black" Margin = "30">
-                </Label>
-
-                <Entry x:Name = "custNameField" Keyboard = "Default" Placeholder = "Customer Name" Margin = "30, 50, 30, 20" TextColor = "Black">
-                </Entry>
-
-                <Picker x:Name= "ServiceType" Margin = "30,5,30,20" Title = "Service Type">
-                </Picker>
-
-                <Entry x:Name = "costField" Keyboard = "Numeric" Placeholder = "Cost" Margin = "30,5,30,20">
-                </Entry>
-
-                <Entry x:Name = "tidField" Keyboard = "Default" Margin = "30,5,30,20" Placeholder = "TID">
-                </Entry>
-
-                <DatePicker Margin = "30,5,30,20">
-                </DatePicker>
-
-                <Button Text = "Sync Now" BackgroundColor = "Gray" TextColor = "White" FontSize = "25" Margin = "30, 5, 30, 20">
-                </Button>
-            </StackLayout>
-            
-        </ContentPage.Content>
-         </ContentPage>
-
-    <ContentPage Title = "View Jobs">
-        <ContentPage.Content>
-            <StackLayout VerticalOptions = "Center" HorizontalOptions = "Center">
-                <Label Text = "This is where you can view jobs">
-                </Label>
-            </StackLayout>
-        </ContentPage.Content>
-    </ContentPage>
-
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ServiceTrackerApp" x:Class="ServiceTrackerApp.Employee_Options">
+    <local:AddJobs>
+    </local:AddJobs>
+    <local:ViewGoals>
+    </local:ViewGoals>
 </TabbedPage>

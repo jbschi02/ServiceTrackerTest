@@ -11,7 +11,7 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
-using System.Security.Cryptography;
+//using System.Security.Cryptography;
 
 using Xamarin.Forms;
 
@@ -35,8 +35,13 @@ namespace ServiceTrackerApp
             {
                 if (await CheckValidLogin(usernameField.Text, passwordField.Text))
                 {
-                    App.Current.MainPage = new GetTest();
+
+                    App.Current.MainPage = new Employee_Options();
                     //await Navigation.PushAsync(new GetTest());
+
+                    
+                   // await Navigation.PushAsync(new Employee_Options());
+
                 }
                 else
                 {

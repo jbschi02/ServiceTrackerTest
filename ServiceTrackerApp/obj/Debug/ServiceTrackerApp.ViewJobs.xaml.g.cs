@@ -11,7 +11,8 @@
 namespace ServiceTrackerApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Gargai/Projects/ServiceTrackerApp/ServiceTrackerApp/ViewJobs.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/ViewJobs" +
+        ".xaml")]
     public partial class ViewJobs : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
