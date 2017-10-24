@@ -36,7 +36,7 @@ namespace ServiceTrackerApp
                 if (await CheckValidLogin(usernameField.Text, passwordField.Text))
                 {
 
-                    App.Current.MainPage = new Employee_Options();
+                    App.Current.MainPage = new Employee_Options(usernameField.Text);
                     //await Navigation.PushAsync(new GetTest());
 
                     

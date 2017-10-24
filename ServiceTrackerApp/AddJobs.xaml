@@ -16,8 +16,6 @@
                 <Entry x:Name = "costField" Keyboard = "Numeric" Placeholder = "Cost" Margin = "30,5,30,20">
                 </Entry>
 
-                <Entry x:Name = "tidField" Keyboard = "Default" Margin = "30,5,30,20" Placeholder = "TID">
-                </Entry>
 
                 <DatePicker Margin = "30,5,30,20">
                 </DatePicker>

@@ -2,12 +2,14 @@
   <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DAE0B9EF-EBD2-4427-B2D4-22460D8E05E6" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ServiceTrackerTest.git Status">
     <Files>
-      <File FileName="ServiceTrackerApp/Employee_Login.xaml.cs" Line="39" Column="64" />
-      <File FileName="ServiceTrackerApp/GetTest.xaml.cs" Line="1" Column="1" />
-      <File FileName="ServiceTrackerApp/AddJobs.xaml" Line="31" Column="1" />
-      <File FileName="ServiceTrackerApp/AddJobs.xaml.cs" Line="68" Column="60" />
-      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.0.0-33/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1445" Column="2" />
-      <File FileName="packages/Microsoft.Bcl.Build.1.0.21/build/Microsoft.Bcl.Build.targets" Line="243" Column="39" />
+      <File FileName="ServiceTrackerApp/Employee_Login.xaml.cs" Line="32" Column="14" />
+      <File FileName="ServiceTrackerApp/AddJobs.xaml" Line="18" Column="17" />
+      <File FileName="ServiceTrackerApp/Employee_Options.xaml.cs" Line="23" Column="1" />
+      <File FileName="ServiceTrackerApp/Employee_Options.xaml" Line="4" Column="20" />
+      <File FileName="ServiceTrackerApp/ViewGoals.xaml" Line="10" Column="1" />
+      <File FileName="ServiceTrackerApp/User.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="ServiceTrackerApp/AddJobs.xaml.cs" Line="36" Column="31" />
       <File FileName="ServiceTrackerTest.git Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
