@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ServiceTrackerApp.MTDView">
+	<ContentPage.Content>
+        <Grid Padding = "20" ColumnSpacing = "10" RowSpacing = "20" BackgroundColor = "#d3d3d3">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "auto">
+                </RowDefinition>
+
+                <RowDefinition Height = "auto">
+                </RowDefinition>
+
+                <RowDefinition Height = "auto">
+                </RowDefinition>
+
+                <RowDefinition Height = "auto">
+                </RowDefinition>
+
+                <RowDefinition Height = "auto">
+                </RowDefinition>
+
+                <RowDefinition Height = "auto">
+                </RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*">
+                </ColumnDefinition>
+                <ColumnDefinition Width = "*">
+                </ColumnDefinition>
+
+                
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="MTDTitle" Grid.ColumnSpan="2" Text =  "Monthly Goals" HorizontalOptions = "Center" FontSize = "30">
+            </Label>  
+
+            <BoxView Color = "#39CCCC" Grid.Row = "1" Grid.Column = "0" HeightRequest = "70">
+            </BoxView>
+
+            <Label Text = "Actual" Grid.Row = "1" Grid.Column = "0"  HorizontalTextAlignment = "Center" TextColor = "White">
+            </Label>
+
+            <Label x:Name ="ActualLabel" Text = "$" Grid.Row = "1" Grid.Column = "0" VerticalTextAlignment = "Center" HorizontalTextAlignment = "Center" TextColor = "White" FontSize = "35">
+            </Label>
+
+            <BoxView Color = "Navy" Grid.Row = "1" Grid.Column = "1">
+            </BoxView>
+
+            <Label Text = "Goal" Grid.Row = "1" Grid.Column = "1" HorizontalTextAlignment = "Center" TextColor = "White">
+            </Label>
+
+            <Label x:Name = "GoalLabel" Text = "$" Grid.Row = "1" Grid.Column = "1" VerticalTextAlignment = "Center" HorizontalTextAlignment = "Center" TextColor = "White" FontSize = "35">
+            </Label>
+
+           <ProgressBar x:Name ="ProgressBar" Grid.Row = "3" Grid.ColumnSpan = "2" Progress = "0.5" WidthRequest = "300" HeightRequest = "20">
+           </ProgressBar>
+
+            <Label Text = "Needed to reach goal" Grid.Row = "3" Grid.ColumnSpan = "2" FontSize = "15">
+            </Label>
+
+            <Label x:Name = "GoalText" Grid.Row = "3" Grid.Column = "1" Text = "$" HorizontalTextAlignment = "Start" FontSize = "15"> 
+            </Label>
+
+            <Label Text = "Jobs Added:" Grid.Row = "5" FontSize = "15" HorizontalTextAlignment = "Start">
+            </Label>
+            
+            <Label x:Name = "numJob" Text = "#" Grid.Row = "5" HorizontalTextAlignment = "End">
+            </Label>
+
+            <Label Text = "Opportunities:" Grid.Row = "6" Font = "15" HorizontalTextAlignment = "Start">
+            </Label>
+
+            <Label x:Name = "numOpp" Text = "#" Grid.Row = "6" HorizontalTextAlignment = "End"> 
+            </Label>
+
+            <Button Text = "Sync Now" Grid.Row = "7" BackgroundColor = "Gray" TextColor = "White" Grid.ColumnSpan = "2" Margin = "30">
+            </Button>
+
+        </Grid>   
+	</ContentPage.Content>
+</ContentPage>

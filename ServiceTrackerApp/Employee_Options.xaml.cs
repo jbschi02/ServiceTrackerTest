@@ -11,9 +11,16 @@ namespace ServiceTrackerApp
         //string tid;
         public Employee_Options(string tid)
         {
+            NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
-            this.Children.Add((new AddJobs(tid)));
-            this.Children.Add(new ViewGoals());
+
+            //this.tid = tid;
+        }
+
+        public Employee_Options()
+        {
+            NavigationPage.SetHasBackButton(this, false);
+            InitializeComponent();
             //this.tid = tid;
         }
     }

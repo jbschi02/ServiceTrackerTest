@@ -109,6 +109,7 @@
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/BouncyCastle.Crypto.dll
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/bouncy_castle_hmac_sha_pcl.dll
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/Newtonsoft.Json.dll
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/SkiaSharp.dll
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/System.Json.dll
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/System.Net.Http.Extensions.dll
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/System.Net.Http.Primitives.dll
@@ -125,6 +126,7 @@
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/BouncyCastle.Crypto.xml
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/SkiaSharp.xml
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csproj.App.config
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csprojResolveAssemblyReference.cache
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csproj.CoreCompileInputs.cache
@@ -138,5 +140,8 @@
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.GetTest.xaml.g.cs
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.AddJobs.xaml.g.cs
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.ViewGoals.xaml.g.cs
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.MTDView.xaml.g.cs
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.DTDView.xaml.g.cs
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.YTDView.xaml.g.cs
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.dll
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.pdb

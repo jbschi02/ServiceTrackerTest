@@ -19,13 +19,18 @@ namespace ServiceTrackerApp
 {
     public partial class Employee_Login : ContentPage
     {
+
         public Employee_Login()
+
         {
+            
             InitializeComponent();
+           
         }
 
-        async void Handle_Clicked(object sender, System.EventArgs e)
+        async public void Handle_Clicked(object sender, System.EventArgs e)
         {
+           
             if (usernameField.Text == null || passwordField.Text == null)
             {
                await DisplayAlert("Error", "A required field is empty", "OK");
@@ -36,11 +41,11 @@ namespace ServiceTrackerApp
                 if (await CheckValidLogin(usernameField.Text, passwordField.Text))
                 {
 
-                    App.Current.MainPage = new Employee_Options(usernameField.Text);
+                    //App.Current.MainPage = new Employee_Options(usernameField.Text);
                     //await Navigation.PushAsync(new GetTest());
 
                     
-                   // await Navigation.PushAsync(new Employee_Options());
+                    await Navigation.PushAsync(new Employee_Options());
 
                 }
                 else

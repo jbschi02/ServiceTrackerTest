@@ -9,6 +9,8 @@ namespace ServiceTrackerApp
             InitializeComponent();
 
             MainPage = new NavigationPage(new HomePage());
+
+
         }
 
         protected override void OnStart()

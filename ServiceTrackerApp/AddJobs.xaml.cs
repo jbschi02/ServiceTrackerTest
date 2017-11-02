@@ -16,16 +16,19 @@ namespace ServiceTrackerApp
 {
     public partial class AddJobs : ContentPage
     {
-        public string tid;
+
         public AddJobs()
         {
+            NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
             ServiceType.Items.Add("Demand Service");             ServiceType.Items.Add("Maintenance");             ServiceType.Items.Add("Tune-up");             ServiceType.Items.Add("IAQ");             ServiceType.Items.Add("Warranty");             ServiceType.Items.Add("Equipment - Air Handler");             ServiceType.Items.Add("Service Agreement - New");             ServiceType.Items.Add("Service Agreement - Renewal");             ServiceType.Items.Add("Equpipment - AC & Coil");             ServiceType.Items.Add("Equipment - Heat Pump System");             ServiceType.Items.Add("Equipment - Gas Furnance");             ServiceType.Items.Add("Equipment - Packaged Unit");             ServiceType.Items.Add("Equipment - Geothermal");
-            this.tid = "test";
-        }
-        public AddJobs(string tid)
-        {
-            this.tid = tid;
+
+            Opportunity.Items.Add("Yes");
+            Opportunity.Items.Add("No");
+
+
+
+          
         }
 
 
@@ -90,7 +93,7 @@ namespace ServiceTrackerApp
                 Custname = custNameField.Text,
                 Cost = money,
                 Date = DateTime.Now,
-                tid = this.tid,
+                //tid = ,
                 JobID = newJobId,
                 ServiceType = ServiceType.SelectedItem.ToString()
             };
