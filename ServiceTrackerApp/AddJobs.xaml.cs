@@ -16,8 +16,8 @@ namespace ServiceTrackerApp
 {
     public partial class AddJobs : ContentPage
     {
-
-        public AddJobs()
+        public string tid;
+        public AddJobs(string tid)
         {
             NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
@@ -25,10 +25,7 @@ namespace ServiceTrackerApp
 
             Opportunity.Items.Add("Yes");
             Opportunity.Items.Add("No");
-
-
-
-          
+            this.tid = tid;
         }
 
 
@@ -93,7 +90,7 @@ namespace ServiceTrackerApp
                 Custname = custNameField.Text,
                 Cost = money,
                 Date = DateTime.Now,
-                //tid = ,
+                tid = this.tid,
                 JobID = newJobId,
                 ServiceType = ServiceType.SelectedItem.ToString()
             };

@@ -45,7 +45,7 @@ namespace ServiceTrackerApp
                     //await Navigation.PushAsync(new GetTest());
 
                     
-                    await Navigation.PushAsync(new Employee_Options());
+                    await Navigation.PushAsync(new Employee_Options(usernameField.Text));
 
                 }
                 else
