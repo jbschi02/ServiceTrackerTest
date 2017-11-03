@@ -19,7 +19,7 @@
       <File FileName="ServiceTrackerApp/MTDView.xaml.cs" Line="162" Column="6" />
       <File FileName="ServiceTrackerApp/Goals.cs" Line="38" Column="36" />
       <File FileName="ServiceTrackerApp/DTDView.xaml.cs" Line="178" Column="26" />
-      <File FileName="ServiceTrackerApp/YTDView.xaml" Line="22" Column="48" />
+      <File FileName="ServiceTrackerApp/YTDView.xaml" Line="84" Column="1" />
       <File FileName="ServiceTrackerApp/YTDView.xaml.cs" Line="104" Column="39" />
       <File FileName="ServiceTrackerApp/AddJobs.xaml.cs" Line="113" Column="9" />
       <File FileName="ServiceTrackerApp/Jobs.cs" Line="16" Column="40" />
