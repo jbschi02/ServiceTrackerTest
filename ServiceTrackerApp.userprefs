@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <Properties StartupConfiguration="{BB604CC9-9DE9-4CCC-82F7-4A1F3F8C8037}|Default">
   <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.62E30BB0-5377-42AF-B9EB-C677D1B49931" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ServiceTrackerTest.git Status">
@@ -25,6 +26,22 @@
       <File FileName="ServiceTrackerApp/Jobs.cs" Line="16" Column="40" />
       <File FileName="ServiceTrackerApp/ViewGoals.xaml.cs" Line="29" Column="63" />
 >>>>>>> 5be4e01... All Goals Pages complete
+=======
+﻿<Properties StartupConfiguration="{BB604CC9-9DE9-4CCC-82F7-4A1F3F8C8037}|Default">
+  <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.950EC8AB-5C15-4A1B-8C57-9B748B19B907" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceTrackerTest.git Status">
+    <Files>
+      <File FileName="ServiceTrackerApp/Goals.cs" Line="41" Column="27" />
+      <File FileName="ServiceTrackerApp/DTDView.xaml.cs" Line="236" Column="67" />
+      <File FileName="ServiceTrackerApp/Jobs.cs" Line="16" Column="40" />
+      <File FileName="ServiceTrackerApp/ViewGoals.xaml.cs" Line="1" Column="1" />
+      <File FileName="ServiceTrackerApp/App.xaml.cs" Line="6" Column="6" />
+      <File FileName="ServiceTrackerApp/packages.config" Line="1" Column="1" />
+      <File FileName="ServiceTrackerApp/YTDView.xaml.cs" Line="36" Column="13" />
+      <File FileName="iOS/Main.cs" Line="13" Column="34" />
+      <File FileName="ServiceTrackerApp/MTDView.xaml.cs" Line="65" Column="72" />
+      <File FileName="ServiceTrackerApp/AddJobs.xaml.cs" Line="282" Column="57" />
+>>>>>>> a285239... 11/7/2017 Re-commit
       <File FileName="ServiceTrackerTest.git Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

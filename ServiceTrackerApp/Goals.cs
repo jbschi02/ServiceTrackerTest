@@ -3,94 +3,44 @@ namespace ServiceTrackerApp
 {
     public class Goals
     {
-        private float DailyGoal { get; set; }
-        private float DailyActual { get; set; }
-        private float MonthlyGoal { get; set; }
-        private float MonthlyActual { get; set; }
-        private float YearlyGoal { get; set; }
-        private float YearlyActual { get; set; }
-        private string tid { get; set; }
+        public float daily { get; set; }
+        public float dailyactual { get; set; }
+        public float jan { get; set; }
+        public float feb { get; set; }
+        public float mar { get; set; }
+        public float apr { get; set; }
+        public float may { get; set; }
+        public float jun { get; set; }
+        public float jul { get; set; }
+        public float aug { get; set; }
+        public float sep { get; set; }
+        public float oct { get; set; }
+        public float nov { get; set; }
+        public float dec { get; set; }
+        public float janActual { get; set; }
+        public float febActual { get; set; }
+        public float marActual { get; set; }
+        public float aprActual { get; set; }
+        public float mayActual { get; set; }
+        public float junActual { get; set; }
+        public float julActual { get; set; }
+        public float augActual { get; set; }
+        public float sepActual { get; set; }
+        public float octActual { get; set; }
+        public float novActual { get; set; }
+        public float decActual { get; set; }
+        public float ytd { get; set; }
+        public float ytdactual { get; set; }
+        public string tid { get; set; }
 
         public Goals()
         {
-            this.DailyGoal = 0;
-            this.DailyActual = 0;
-            this.MonthlyGoal = 0;
-            this.MonthlyActual = 0;
-            this.YearlyGoal = 0;
-            this.YearlyActual = 0;
+            this.daily = 0;
+            this.dailyactual = 0;
+            this.ytd = 0;
+            this.ytdactual = 0;
             this.tid = "";
                 
-        }
-
-        public void SetDailyGoals (float DailyGoal)
-        {
-            this.DailyGoal = DailyGoal;
-        }
-
-        public void SetDailyActual (float DailyActual)
-        {
-            this.DailyActual = DailyActual;
-        }
-
-        public void SetMonthlyGoal (float MonthlyGoal)
-        {
-            this.MonthlyGoal = MonthlyGoal;
-        }
-
-        public void SetMonthlyActual (float MonthlyActual)
-        {
-            this.MonthlyActual = MonthlyActual;
-        }
-
-        public void SetYearlyGoal (float YearlyGoal)
-        {
-            this.YearlyGoal = YearlyGoal;
-        }
-
-        public void SetYearlyActual (float YearlyActual)
-        {
-            this.YearlyActual = YearlyActual;
-        }
-
-        public void SetTid (string tid)
-        {
-            this.tid = tid;
-        }
-
-        public float GetDailyGoal()
-        {
-            return this.DailyGoal;
-        }
-
-        public float GetDailyActual()
-        {
-            return this.DailyActual;
-        }
-
-        public float GetMonthlyGoal()
-        {
-            return this.MonthlyGoal;
-        }
-
-        public float GetMonthlyActual()
-        {
-            return this.MonthlyActual;
-        }
-
-        public float GetYearlyGoal()
-        {
-            return this.YearlyGoal;
-        }
-
-        public float GetYearlyActual()
-        {
-            return this.YearlyActual;
-        }
-
-        public string GetTid(string tid)
-        {
-            return this.tid;
         }
     }
 }

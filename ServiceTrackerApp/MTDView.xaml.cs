@@ -24,6 +24,8 @@ namespace ServiceTrackerApp
         public string tid;
         public JsonValue jsondoc;
         public Goals goals;
+        public float monthlyGoal;
+        public float monthlyGoalActual;
 
         public MTDView(string tid)
         {
@@ -42,11 +44,11 @@ namespace ServiceTrackerApp
 
             float RemainingGoal;
 
-            GoalText.Text = "$"+(this.goals.GetMonthlyGoal() - this.goals.GetMonthlyActual()).ToString();
-            RemainingGoal = (goals.GetMonthlyActual() / goals.GetMonthlyGoal());
+            GoalText.Text = "$"+(this.monthlyGoal - this.monthlyGoalActual).ToString();
+            RemainingGoal = (this.monthlyGoalActual / this.monthlyGoal);
 
-            ActualLabel.Text = "$" + this.goals.GetMonthlyActual().ToString();
-            GoalLabel.Text = "$" + this.goals.GetMonthlyGoal().ToString();
+            ActualLabel.Text = "$" + this.monthlyGoalActual.ToString();
+            GoalLabel.Text = "$" + this.monthlyGoal.ToString();
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -59,11 +61,11 @@ namespace ServiceTrackerApp
 
             float RemainingGoal;
 
-            GoalText.Text = "$" + (this.goals.GetMonthlyGoal() - this.goals.GetMonthlyActual()).ToString();
-            RemainingGoal = (float)(goals.GetMonthlyActual() / goals.GetMonthlyGoal());
+            GoalText.Text = "$" + (this.monthlyGoal - this.monthlyGoalActual).ToString();
+            RemainingGoal = (this.monthlyGoalActual / this.monthlyGoal);
 
-            ActualLabel.Text = "$" + this.goals.GetMonthlyActual().ToString();
-            GoalLabel.Text = "$" + this.goals.GetMonthlyGoal().ToString();
+            ActualLabel.Text = "$" + this.monthlyGoalActual.ToString();
+            GoalLabel.Text = "$" + this.monthlyGoal.ToString();
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -107,55 +109,102 @@ namespace ServiceTrackerApp
                 case "01":
                     currentMonthDBActual = "janActual";
                     currentMonthDBGoal = "jan";
+                    goals.jan = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.janActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.jan;
+                    this.monthlyGoalActual = goals.janActual;
                     break;
                 case "02":
                     currentMonthDBActual = "febActual";
                     currentMonthDBGoal = "feb";
+                    goals.feb = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.febActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.feb;
+                    this.monthlyGoalActual = goals.febActual;
                     break;
                 case "03":
                     currentMonthDBActual = "marActual";
                     currentMonthDBGoal = "mar";
+                    goals.mar = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.marActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.mar;
+                    this.monthlyGoalActual = goals.marActual;
                     break;
                 case "04":
                     currentMonthDBActual = "aprActual";
                     currentMonthDBGoal = "apr";
+                    goals.apr = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.aprActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.apr;
+                    this.monthlyGoalActual = goals.aprActual;
                     break;
                 case "05":
                     currentMonthDBActual = "mayActual";
                     currentMonthDBGoal = "may";
+                    goals.may = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.mayActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.may;
+                    this.monthlyGoalActual = goals.mayActual;
                     break;
                 case "06":
                     currentMonthDBActual = "junActual";
                     currentMonthDBGoal = "jun";
+                    goals.jun = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.junActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.jun;
+                    this.monthlyGoalActual = goals.junActual;
                     break;
                 case "07":
                     currentMonthDBActual = "julActual";
                     currentMonthDBGoal = "jul";
+                    goals.jul= ((float)jsonObject[currentMonthDBGoal]);
+                    goals.julActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.jul;
+                    this.monthlyGoalActual = goals.julActual;
                     break;
                 case "08":
                     currentMonthDBActual = "augActual";
                     currentMonthDBGoal = "aug";
+                    goals.aug = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.augActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.aug;
+                    this.monthlyGoalActual = goals.augActual;
                     break;
                 case "09":
                     currentMonthDBActual = "sepActual";
                     currentMonthDBGoal = "sep";
+                    goals.sep = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.sepActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.sep;
+                    this.monthlyGoalActual = goals.sepActual;
                     break;
                 case "10":
                     currentMonthDBActual = "octActual";
                     currentMonthDBGoal = "oct";
+                    goals.oct = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.octActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.oct;
+                    this.monthlyGoalActual = goals.octActual;
                     break;
                 case "11":
                     currentMonthDBActual = "novActual";
                     currentMonthDBGoal = "nov";
+                    goals.nov = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.novActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.nov;
+                    this.monthlyGoalActual = goals.novActual;
                     break;
                 case "12":
                     currentMonthDBActual = "decActual";
                     currentMonthDBGoal = "dec";
+                    goals.dec = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.decActual = ((float)jsonObject[currentMonthDBActual]);
+                    this.monthlyGoal = goals.dec;
+                    this.monthlyGoalActual = goals.decActual;
                     break;
             }
 
-            goals.SetMonthlyGoal((float)jsonObject[currentMonthDBGoal]);
-            goals.SetMonthlyActual((float)jsonObject[currentMonthDBActual]);
+
 
             return goals;
         }

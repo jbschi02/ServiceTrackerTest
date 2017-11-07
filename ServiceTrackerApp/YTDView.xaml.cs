@@ -39,11 +39,11 @@ namespace ServiceTrackerApp
 
             float RemainingGoal;
 
-            GoalText.Text = "$" + (this.goals.GetYearlyGoal() - this.goals.GetYearlyActual()).ToString();
-            RemainingGoal = (goals.GetYearlyActual() / goals.GetYearlyGoal());
+            GoalText.Text = "$" + (this.goals.ytd - this.goals.ytdactual).ToString();
+            RemainingGoal = (goals.ytdactual / goals.ytd);
 
-            ActualLabel.Text = "$" + this.goals.GetYearlyActual().ToString();
-            GoalLabel.Text = "$" + this.goals.GetYearlyGoal().ToString();
+            ActualLabel.Text = "$" + this.goals.ytdactual.ToString();
+            GoalLabel.Text = "$" + this.goals.ytd.ToString();
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -56,11 +56,11 @@ namespace ServiceTrackerApp
 
             float RemainingGoal;
 
-            GoalText.Text = "$" + (this.goals.GetYearlyGoal() - this.goals.GetYearlyActual()).ToString();
-            RemainingGoal = (goals.GetYearlyActual() / goals.GetYearlyGoal());
+            GoalText.Text = "$" + (this.goals.ytd - this.goals.ytdactual).ToString();
+            RemainingGoal = (goals.ytdactual / goals.ytd);
 
-            ActualLabel.Text = "$" + this.goals.GetYearlyActual().ToString();
-            GoalLabel.Text = "$" + this.goals.GetYearlyGoal().ToString();
+            ActualLabel.Text = "$" + this.goals.ytdactual.ToString();
+            GoalLabel.Text = "$" + this.goals.ytd.ToString();
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -96,12 +96,10 @@ namespace ServiceTrackerApp
         private Goals ParseJSONToGoals(JsonValue json, Goals goals)
         {
             JsonObject jsonObject = json as JsonObject;
-            string currentMonthDBActual = "";
-            string currentMonthDBGoal = "";
 
 
-            goals.SetYearlyGoal((float)jsonObject[currentMonthDBGoal]);
-            goals.SetYearlyActual((float)jsonObject[currentMonthDBActual]);
+            goals.ytd = ((float)jsonObject["ytd"]);
+            goals.ytdactual = ((float)jsonObject["ytdactual"]);
 
             return goals;
         }

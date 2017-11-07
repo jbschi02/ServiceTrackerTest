@@ -38,34 +38,39 @@ namespace ServiceTrackerApp
             this.goals = ParseJSONToGoals(this.jsondoc, this.goals);
 
             float RemainingGoal;
-            double remaining = this.goals.GetDailyGoal() - this.goals.GetDailyActual();
+            double remaining = this.goals.daily - this.goals.dailyactual;
             string remainingString = string.Format("{0:.00}", remaining);
 
             GoalText.Text = "$" + remainingString;
 
-            string s = (goals.GetDailyActual() / goals.GetDailyGoal()).ToString();
+            string s = (goals.dailyactual / goals.daily).ToString();
 
-            RemainingGoal = (float)(goals.GetDailyActual() / goals.GetDailyGoal());
+            RemainingGoal = (float)(goals.dailyactual / goals.daily);
 
-            ActualLabel.Text = "$" + this.goals.GetDailyActual().ToString();
-            GoalLabel.Text = "$" + this.goals.GetDailyGoal().ToString();
+            ActualLabel.Text = "$" + this.goals.dailyactual.ToString();
+            GoalLabel.Text = "$" + this.goals.daily.ToString();
 
             ProgressBar.Progress = RemainingGoal;
         }
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            await Task.Run(async () => await GetMonthlyGoals());
+                await Task.Run(async () => await GetMonthlyGoals());
             this.goals = new Goals();
             this.goals = ParseJSONToGoals(this.jsondoc, this.goals);
 
             float RemainingGoal;
+            double remaining = this.goals.daily - this.goals.dailyactual;
+            string remainingString = string.Format("{0:.00}", remaining);
 
-            GoalText.Text = "$" + (this.goals.GetDailyGoal() - this.goals.GetDailyActual()).ToString();
-            RemainingGoal = (float)(goals.GetDailyActual() / goals.GetDailyGoal());
+            GoalText.Text = "$" + remainingString;
 
-            ActualLabel.Text = "$" + this.goals.GetDailyActual().ToString();
-            GoalLabel.Text = "$" + this.goals.GetDailyGoal().ToString();
+            string s = (goals.dailyactual / goals.daily).ToString();
+
+            RemainingGoal = (float)(goals.dailyactual / goals.daily);
+
+            ActualLabel.Text = "$" + this.goals.dailyactual.ToString();
+            GoalLabel.Text = "$" + this.goals.daily.ToString();
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -111,69 +116,124 @@ namespace ServiceTrackerApp
                     currentMonthDBActual = "janActual";
                     currentMonthDBGoal = "jan";
                     dayAmount = 31;
+                    goals.jan = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.janActual= ((float)jsonObject[currentMonthDBActual]);
+
+                    goals.daily= (goals.jan / dayAmount);
                     break;
                 case "02":
                     currentMonthDBActual = "febActual";
                     currentMonthDBGoal = "feb";
                     dayAmount = 28;
+                            goals.feb = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.febActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.feb / dayAmount);
+
                     break;
                 case "03":
                     currentMonthDBActual = "marActual";
                     currentMonthDBGoal = "mar";
                     dayAmount = 31;
+
+                            goals.mar = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.marActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.mar / dayAmount);
                     break;
                 case "04":
                     currentMonthDBActual = "aprActual";
                     currentMonthDBGoal = "apr";
                     dayAmount = 30;
+                            goals.apr = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.aprActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.apr / dayAmount);
                     break;
                 case "05":
                     currentMonthDBActual = "mayActual";
                     currentMonthDBGoal = "may";
                     dayAmount = 31;
+
+                            goals.may = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.mayActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.may / dayAmount);
                     break;
                 case "06":
                     currentMonthDBActual = "junActual";
                     currentMonthDBGoal = "jun";
                     dayAmount = 30;
+
+                            goals.jun = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.junActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.jun / dayAmount);
                     break;
                 case "07":
                     currentMonthDBActual = "julActual";
                     currentMonthDBGoal = "jul";
                     dayAmount = 31;
+
+                            goals.jul = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.julActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.jul / dayAmount);
                     break;
                 case "08":
                     currentMonthDBActual = "augActual";
                     currentMonthDBGoal = "aug";
                     dayAmount = 31;
+
+                            goals.aug = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.augActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.aug / dayAmount);
                     break;
                 case "09":
                     currentMonthDBActual = "sepActual";
                     currentMonthDBGoal = "sep";
                     dayAmount = 30;
+
+                            goals.sep = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.sepActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.sep / dayAmount);
                     break;
                 case "10":
                     currentMonthDBActual = "octActual";
                     currentMonthDBGoal = "oct";
                     dayAmount = 31;
+
+                            goals.oct = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.octActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.oct / dayAmount);
                     break;
                 case "11":
                     currentMonthDBActual = "novActual";
                     currentMonthDBGoal = "nov";
                     dayAmount = 30;
+
+                            goals.nov = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.novActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.nov / dayAmount);
                     break;
                 case "12":
                     currentMonthDBActual = "decActual";
                     currentMonthDBGoal = "dec";
                     dayAmount = 31;
+
+                            goals.dec = ((float)jsonObject[currentMonthDBGoal]);
+                            goals.decActual = ((float)jsonObject[currentMonthDBActual]);
+
+                            goals.daily = (goals.dec / dayAmount);
                     break;
             }
 
-            goals.SetMonthlyGoal((float)jsonObject[currentMonthDBGoal]);
-            goals.SetDailyActual((float)jsonObject["dailyactual"]);
-
-            goals.SetDailyGoals(goals.GetMonthlyGoal()/dayAmount);
-
+            
+                    goals.dailyactual = ((float)jsonObject["dailyactual"]);
 
             return goals;
         }
