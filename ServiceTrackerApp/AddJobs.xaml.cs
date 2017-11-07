@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
@@ -16,6 +16,15 @@ namespace ServiceTrackerApp
 {
     public partial class AddJobs : ContentPage
     {
+<<<<<<< HEAD
+        public string tid;
+        public AddJobs(string tid)
+=======
+        public AddJobs()
+>>>>>>> 5be4e01... All Goals Pages complete
+        {
+            InitializeComponent();
+        }
         public string tid;
         public AddJobs(string tid)
         {
@@ -25,9 +34,21 @@ namespace ServiceTrackerApp
 
             Opportunity.Items.Add("Yes");
             Opportunity.Items.Add("No");
+<<<<<<< HEAD
             this.tid = tid;
+=======
+
+            this.tid = tid;
+
+
+          
+>>>>>>> 5be4e01... All Goals Pages complete
         }
 
+        async void Handle_Clicked2(object sender, System.EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
@@ -40,6 +61,11 @@ namespace ServiceTrackerApp
             {
                 string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.jobs";
                 PostJobAsync(url);
+
+                custNameField.Text = String.Empty;
+                costField.Text = String.Empty;
+                Opportunity.SelectedItem = null;
+                ServiceType.SelectedItem = null;
 
             }
         }
@@ -71,6 +97,8 @@ namespace ServiceTrackerApp
         }
 
 
+
+
         private int GetRand()
         {
             Random rand = new Random();
@@ -79,6 +107,92 @@ namespace ServiceTrackerApp
             return newID;
         }
 
+
+        private Goals ParseJSONToGoals(JsonValue json, Goals goals)
+        {
+            JsonObject jsonObject = json as JsonObject;
+            double money = Convert.ToDouble(costField.Text);
+            string currentMonthDBActual = "";
+            string currentMonthDBGoal = "";
+            string sMonth = DateTime.Now.ToString("MM");
+            int dayAmount = 31;
+            switch (sMonth)
+            {
+                case "01":
+                    currentMonthDBActual = "janActual";
+                    currentMonthDBGoal = "jan";
+                    dayAmount = 31;
+                    break;
+                case "02":
+                    currentMonthDBActual = "febActual";
+                    currentMonthDBGoal = "feb";
+                    dayAmount = 28;
+                    break;
+                case "03":
+                    currentMonthDBActual = "marActual";
+                    currentMonthDBGoal = "mar";
+                    dayAmount = 31;
+                    break;
+                case "04":
+                    currentMonthDBActual = "aprActual";
+                    currentMonthDBGoal = "apr";
+                    dayAmount = 30;
+                    break;
+                case "05":
+                    currentMonthDBActual = "mayActual";
+                    currentMonthDBGoal = "may";
+                    dayAmount = 31;
+                    break;
+                case "06":
+                    currentMonthDBActual = "junActual";
+                    currentMonthDBGoal = "jun";
+                    dayAmount = 30;
+                    break;
+                case "07":
+                    currentMonthDBActual = "julActual";
+                    currentMonthDBGoal = "jul";
+                    dayAmount = 31;
+                    break;
+                case "08":
+                    currentMonthDBActual = "augActual";
+                    currentMonthDBGoal = "aug";
+                    dayAmount = 31;
+                    break;
+                case "09":
+                    currentMonthDBActual = "sepActual";
+                    currentMonthDBGoal = "sep";
+                    dayAmount = 30;
+                    break;
+                case "10":
+                    currentMonthDBActual = "octActual";
+                    currentMonthDBGoal = "oct";
+                    dayAmount = 31;
+                    break;
+                case "11":
+                    currentMonthDBActual = "novActual";
+                    currentMonthDBGoal = "nov";
+                    dayAmount = 30;
+                    break;
+                case "12":
+                    currentMonthDBActual = "decActual";
+                    currentMonthDBGoal = "dec";
+                    dayAmount = 31;
+                    break;
+            }
+
+            goals.SetMonthlyGoal((float)jsonObject[currentMonthDBGoal]);
+            goals.SetDailyActual((float)jsonObject["dailyactual"]) ;
+
+            goals.SetDailyGoals(goals.GetMonthlyGoal() / dayAmount);
+
+
+            return goals;
+        }
+    
+        private async void UpdateGoalsAsync(string url)
+        {
+            
+        }
 
         private async void PostJobAsync(string url)
         {

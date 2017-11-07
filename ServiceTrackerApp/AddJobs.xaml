@@ -7,7 +7,7 @@
                 <Label Text = "Create Job" HorizontalOptions = "Center" FontSize = "35" TextColor = "Black" Margin = "30">
                 </Label>
 
-                <Entry x:Name = "custNameField" Keyboard = "Default" Placeholder = "Customer Name" Margin = "30, 50, 30, 20" TextColor = "Black">
+                <Entry x:Name = "custNameField" Keyboard = "Default" Placeholder = "Customer Name" Margin = "30, 35, 30, 20" TextColor = "Black">
                 </Entry>
 
                 <Picker x:Name= "ServiceType" Margin = "30,5,30,20" Title = "Service Type">
@@ -15,7 +15,6 @@
 
                 <Entry x:Name = "costField" Keyboard = "Numeric" Placeholder = "Cost" Margin = "30,5,30,20">
                 </Entry>
-
 
                 <DatePicker Margin = "30,5,30,20">
                 </DatePicker>
@@ -26,6 +25,9 @@
 
                 <Button Text = "Sync Now" BackgroundColor = "Gray" TextColor = "White" FontSize = "25" Margin = "30, 5, 30, 20" Clicked = "Handle_Clicked">
                 </Button>
+
+                <Button Text = "Log Out" BackgroundColor = "White" Margin = "30,0,200,5" Clicked = "Handle_Clicked2">
+            </Button>
             </StackLayout>
             
         </ContentPage.Content>

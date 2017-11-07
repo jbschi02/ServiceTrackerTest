@@ -4,11 +4,14 @@
             <StackLayout BackgroundColor = "#d3d3d3">
                 <Label Text = "View Goals" HorizontalOptions = "CenterAndExpand" FontSize = "35" Margin = "30" > 
             </Label>
-               <Button Text = "DTD" BackgroundColor = "Gray" TextColor = "White" Margin = "30, 100, 30, 20" Clicked = "Handle_Clicked2">
+               <Button Text = "DTD" BackgroundColor = "Gray" TextColor = "White" Margin = "30, 75, 30, 20" Clicked = "Handle_Clicked2">
             </Button>
                 <Button Text = "MTD" BackgroundColor = "Gray" TextColor = "White" Margin = "30, 30, 30, 20" Clicked = "Handle_Clicked">
             </Button> 
             <Button Text = "YTD" BackgroundColor = "Gray" TextColor = "White" Margin = "30, 30, 30, 20" Clicked = "Handle_Clicked3"> 
+            </Button>
+
+            <Button Text = "Log Out" BackgroundColor = "White" Margin = "35, 10,200,5" Clicked = "Handle_Clicked4">  
             </Button>
             </StackLayout>
         </ContentPage.Content>
