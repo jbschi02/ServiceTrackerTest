@@ -13,11 +13,11 @@ namespace ServiceTrackerApp
         {
             NavigationPage.SetHasBackButton(this, false);
             Children.Add(new AddJobs(tid));
-<<<<<<< HEAD
+
             Children.Add(new ViewGoals());
-=======
+
             Children.Add(new ViewGoals(tid));
->>>>>>> 5be4e01... All Goals Pages complete
+
             InitializeComponent();
 
             //this.tid = tid;

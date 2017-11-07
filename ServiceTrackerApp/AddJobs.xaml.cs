@@ -16,17 +16,14 @@ namespace ServiceTrackerApp
 {
     public partial class AddJobs : ContentPage
     {
-<<<<<<< HEAD
+
         public string tid;
-        public AddJobs(string tid)
-=======
+
         public AddJobs()
->>>>>>> 5be4e01... All Goals Pages complete
         {
             InitializeComponent();
         }
-        public string tid;
-        public JsonValue jsondoc;
+
         public AddJobs(string tid)
         {
             NavigationPage.SetHasBackButton(this, false);
@@ -35,15 +32,12 @@ namespace ServiceTrackerApp
 
             Opportunity.Items.Add("Yes");
             Opportunity.Items.Add("No");
-<<<<<<< HEAD
-            this.tid = tid;
-=======
 
             this.tid = tid;
 
 
           
->>>>>>> 5be4e01... All Goals Pages complete
+
         }
 
         async void Handle_Clicked2(object sender, System.EventArgs e)
@@ -63,9 +57,6 @@ namespace ServiceTrackerApp
                 string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.jobs";
                 PostJobAsync(url);
                 Goals goals = new Goals();
-                await Task.Run(async () => await GetMonthlyGoals(this.tid));
-                goals = ParseJSONToGoals(this.jsondoc, goals);
-                PostGoalsAsync(goals, this.tid);
                 custNameField.Text = String.Empty;
                 costField.Text = String.Empty;
                 Opportunity.SelectedItem = null;
@@ -100,33 +91,7 @@ namespace ServiceTrackerApp
             return false;
         }
 
-        async Task GetMonthlyGoals(string tid)
-        {
-            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.goals/";
-            url += this.tid;
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
-            request.ContentType = "application/json";
-            request.Method = "GET";
-            JsonValue jsonDoc = null;
 
-            using (WebResponse response = await request.GetResponseAsync())
-            {
-                using (Stream stream = response.GetResponseStream())
-                {
-                    try
-                    {
-                        jsonDoc = await Task.Run(() => JsonObject.Load(stream));
-                    }
-                    catch (System.ArgumentException)
-                    {
-                        await DisplayAlert("Error", "Awaiting Manager to Update Your Goals", "OK");
-
-                    }
-                }
-            }
-
-            this.jsondoc = jsonDoc;
-        }
 
 
         private int GetRand()
@@ -138,7 +103,7 @@ namespace ServiceTrackerApp
         }
 
 
-        public Goals ParseJSONToGoals(JsonValue json, Goals goals)
+        private Goals ParseJSONToGoals(JsonValue json, Goals goals)
         {
             JsonObject jsonObject = json as JsonObject;
             double money = Convert.ToDouble(costField.Text);
@@ -149,141 +114,50 @@ namespace ServiceTrackerApp
             switch (sMonth)
             {
                 case "01":
-                    currentMonthDBActual = "janActual";
-                    currentMonthDBGoal = "jan";
                     goals.jan = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.janActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.jan / dayAmount);
-                    goals.janActual = goals.janActual + (float)money;
                     break;
                 case "02":
-                    currentMonthDBActual = "febActual";
-                    currentMonthDBGoal = "feb";
                     goals.feb = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.febActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.feb / dayAmount);
-                    goals.febActual = goals.febActual + (float)money;
                     break;
                 case "03":
-                    currentMonthDBActual = "marActual";
-                    currentMonthDBGoal = "mar";
                     goals.mar = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.marActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.mar / dayAmount);
-                    goals.marActual = goals.marActual + (float)money;
                     break;
                 case "04":
-                    currentMonthDBActual = "aprActual";
-                    currentMonthDBGoal = "apr";
                     goals.apr = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.aprActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.apr / dayAmount);
-                    goals.aprActual = goals.aprActual + (float)money;
                     break;
                 case "05":
-                    currentMonthDBActual = "mayActual";
-                    currentMonthDBGoal = "may";
                     goals.may = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.mayActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.may / dayAmount);
-                    goals.mayActual = goals.mayActual + (float)money;
                     break;
                 case "06":
-                    currentMonthDBActual = "junActual";
-                    currentMonthDBGoal = "jun";
                     goals.jun = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.junActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.jun / dayAmount);
-                    goals.junActual = goals.junActual + (float)money;
                     break;
                 case "07":
-                    currentMonthDBActual = "julActual";
-                    currentMonthDBGoal = "jul";
                     goals.jul = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.julActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.jul / dayAmount);
-                    goals.julActual = goals.julActual + (float)money;
                     break;
                 case "08":
-                    currentMonthDBActual = "augActual";
-                    currentMonthDBGoal = "aug";
                     goals.aug = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.augActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.aug / dayAmount);
-                    goals.augActual = goals.augActual + (float)money;
                     break;
                 case "09":
-                    currentMonthDBActual = "sepActual";
-                    currentMonthDBGoal = "sep";
                     goals.sep = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.sepActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.sep / dayAmount);
-                    goals.sepActual = goals.sepActual + (float)money;
                     break;
                 case "10":
-                    currentMonthDBActual = "octActual";
-                    currentMonthDBGoal = "oct";
                     goals.oct = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.octActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.oct / dayAmount);
-                    goals.octActual = goals.octActual + (float)money;
                     break;
                 case "11":
-                    currentMonthDBActual = "novActual";
-                    currentMonthDBGoal = "nov";
                     goals.nov = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.novActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.nov / dayAmount);
-                    goals.novActual = goals.novActual + (float)money;
                     break;
                 case "12":
-                    currentMonthDBActual = "decActual";
-                    currentMonthDBGoal = "dec";
                     goals.dec = ((float)jsonObject[currentMonthDBGoal]);
-                    goals.decActual = ((float)jsonObject[currentMonthDBActual]);
-                    goals.daily = (goals.dec / dayAmount);
-                    goals.decActual = goals.decActual + (float)money;
                     break;
             }
-
-            goals.dailyactual = ((float)jsonObject["dailyactual"]) ;
-
-            float dailyTotal = goals.dailyactual + (float)money;
-
+            goals.dailyactual = ((float)jsonObject["dailyactual"]);
             goals.ytdactual = ((float)jsonObject["ytdactual"]);
-            float yearlyTotal = goals.ytdactual + (float)money;
-
-
-
-
-
             return goals;
         }
     
         private async void UpdateGoalsAsync(string url)
         {
             
-        }
-
-        private async void PostGoalsAsync(Goals goals, string tid)
-        {
-            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.goals/";
-            url += this.tid;
-            var client = new HttpClient();
-
-
-            var content = new StringContent(JsonConvert.SerializeObject(goals), Encoding.UTF8, "application/json");
-            var result = await client.PutAsync(url, content);
-            if (result.IsSuccessStatusCode)
-            {
-                System.Diagnostics.Debug.WriteLine("goals updated");
-            }
-
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("FAILED with response code: {0}", result);
-                await DisplayAlert("Failed!", "The Job Has Not Been Added", "OK");
-            }
         }
 
         private async void PostJobAsync(string url)
