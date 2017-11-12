@@ -1,4 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using System.Net;
+using System.Json;
+using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace ServiceTrackerApp
 {
     public class Goals
@@ -41,6 +52,41 @@ namespace ServiceTrackerApp
             this.ytdactual = 0;
             this.tid = "";
                 
+        }
+
+        public Goals ParseJSON(Goals goals, JsonObject jsonObject)
+        {
+            goals.daily = (float)jsonObject["daily"];
+            goals.dailyactual = (float)jsonObject["dailyactual"];
+            goals.jan = (float)jsonObject["jan"];
+            goals.feb = (float)jsonObject["feb"];
+            goals.mar = (float)jsonObject["mar"];
+            goals.apr = (float)jsonObject["apr"];
+            goals.may = (float)jsonObject["may"];
+            goals.jun = (float)jsonObject["jun"];
+            goals.jul = (float)jsonObject["jul"];
+            goals.aug = (float)jsonObject["aug"];
+            goals.sep = (float)jsonObject["sep"];
+            goals.oct = (float)jsonObject["oct"];
+            goals.nov = (float)jsonObject["nov"];
+            goals.dec = (float)jsonObject["dec"];
+            goals.janActual = (float)jsonObject["janActual"];
+            goals.febActual = (float)jsonObject["febActual"];
+            goals.marActual = (float)jsonObject["marActual"];
+            goals.aprActual = (float)jsonObject["aprActual"];
+            goals.mayActual = (float)jsonObject["mayActual"];
+            goals.junActual = (float)jsonObject["junActual"];
+            goals.julActual = (float)jsonObject["julActual"];
+            goals.augActual = (float)jsonObject["augActual"];
+            goals.sepActual = (float)jsonObject["sepActual"];
+            goals.octActual = (float)jsonObject["octActual"];
+            goals.novActual = (float)jsonObject["novActual"];
+            goals.decActual = (float)jsonObject["decActual"];
+            goals.ytd = (float)jsonObject["ytf"];
+            goals.ytdactual = (float)jsonObject["ytdactual"];
+            goals.tid = (string)jsonObject["tid"];
+
+            return goals;
         }
     }
 }

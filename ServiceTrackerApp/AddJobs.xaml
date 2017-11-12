@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ServiceTrackerApp.AddJobs" NavigationPage.HasBackButton = "False" Title = "AddJobs" Icon = "ic_note_add1" > 
         
         <ContentPage.Content>
+        <ScrollView>
             
             <StackLayout BackgroundColor = "#d3d3d3">
                 <Label Text = "Create Job" HorizontalOptions = "Center" FontSize = "35" TextColor = "Black" Margin = "30">
@@ -19,7 +20,22 @@
                 <DatePicker Margin = "30,5,30,20">
                 </DatePicker>
 
-                <Picker x:Name= "Opportunity" Margin = "30, 5, 30, 20" Title = "Opportunity">
+                <Picker x:Name= "Opportunity" Margin = "30, 5, 30, 20" Title = "Opportunity" SelectedIndex = "1" SelectedIndexChanged = "Handle_SelectedIndexChanged">
+                </Picker>
+
+                <Entry x:Name = "ageField" Keyboard = "Numeric" Margin = "30,5,30,20" Placeholder = "Age" IsVisible = "false" >
+                </Entry>
+
+                <Picker x:Name = "quoteField"  Margin = "30,5,30,20" Title = "Quote" SelectedIndex = "0"  IsVisible = "false" SelectedIndexChanged = "Handle_SelectedIndexChanged2">
+                </Picker>
+
+                <Picker x:Name = "jobType" Margin = "30,5,30,20" Title = "Job Type" IsVisible = "false" >
+                </Picker>
+
+                <Entry x:Name = "quoteAmount" Margin = "30,5,30,20" Keyboard = "Numeric" Placeholder = "Quote Amount" IsVisible = "false">
+                </Entry>
+
+                <Picker x:Name = "opportunityStatus" Margin = "30,5,30,20" Title = "Opportunity Status" IsVisible = "false">
                 </Picker>
             
 
@@ -29,6 +45,7 @@
                 <Button Text = "Log Out" BackgroundColor = "White" Margin = "30,0,200,5" Clicked = "Handle_Clicked2">
             </Button>
             </StackLayout>
+            </ScrollView>
             
         </ContentPage.Content>
 </ContentPage>

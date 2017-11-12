@@ -30,14 +30,61 @@ namespace ServiceTrackerApp
             InitializeComponent();
             ServiceType.Items.Add("Demand Service");             ServiceType.Items.Add("Maintenance");             ServiceType.Items.Add("Tune-up");             ServiceType.Items.Add("IAQ");             ServiceType.Items.Add("Warranty");             ServiceType.Items.Add("Equipment - Air Handler");             ServiceType.Items.Add("Service Agreement - New");             ServiceType.Items.Add("Service Agreement - Renewal");             ServiceType.Items.Add("Equpipment - AC & Coil");             ServiceType.Items.Add("Equipment - Heat Pump System");             ServiceType.Items.Add("Equipment - Gas Furnance");             ServiceType.Items.Add("Equipment - Packaged Unit");             ServiceType.Items.Add("Equipment - Geothermal");
 
+            jobType.Items.Add("Demand Service");
+            jobType.Items.Add("Maintenance");
+            jobType.Items.Add("IAQ");
+            jobType.Items.Add("Equipment - Air Handler");
+            jobType.Items.Add("Service Agreement - New");
+            jobType.Items.Add("Equpipment - AC & Coil");
+            jobType.Items.Add("Equipment - Heat Pump System");
+            jobType.Items.Add("Equipment - Gas Furnance");
+            jobType.Items.Add("Equipment - Packaged Unit");
+            jobType.Items.Add("Equipment - Geothermal");
+
+
             Opportunity.Items.Add("Yes");
             Opportunity.Items.Add("No");
 
+            quoteField.Items.Add("Yes");
+            quoteField.Items.Add("No");
+
+            opportunityStatus.Items.Add("Open");
+            opportunityStatus.Items.Add("Closed");
+
             this.tid = tid;
+        }
 
+        void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            if (Opportunity.SelectedIndex == 0)
+            {
+                ageField.IsVisible = true;
+                quoteField.IsVisible = true;
+            }
 
-          
+            else
+            {
+                ageField.IsVisible = false;
+                quoteField.IsVisible = false;
+            }
+        }
 
+        void Handle_SelectedIndexChanged2(object sender, System.EventArgs e)
+        {
+            if (quoteField.SelectedIndex == 0)
+            {
+                jobType.IsVisible = true;
+                quoteAmount.IsVisible = true;
+                opportunityStatus.IsVisible = true;
+            }
+
+            else
+            {
+                jobType.IsVisible = false;
+                quoteAmount.IsVisible = false;
+                opportunityStatus.IsVisible = false;
+
+            }
         }
 
         async void Handle_Clicked2(object sender, System.EventArgs e)
@@ -57,6 +104,9 @@ namespace ServiceTrackerApp
                 string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.jobs";
                 PostJobAsync(url);
                 Goals goals = new Goals();
+                goals = await ParseJSONToGoals(goals);
+                goals.dailyactual += (float)Convert.ToDouble(costField.Text);
+                goals.ytdactual += (float)Convert.ToDouble(costField.Text);
                 custNameField.Text = String.Empty;
                 costField.Text = String.Empty;
                 Opportunity.SelectedItem = null;
@@ -103,15 +153,38 @@ namespace ServiceTrackerApp
         }
 
 
-        private Goals ParseJSONToGoals(JsonValue json, Goals goals)
+        private async Task<Goals> ParseJSONToGoals(Goals goals)
         {
-            JsonObject jsonObject = json as JsonObject;
+            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.goals/";
+            url += this.tid;
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
+            request.ContentType = "application/json";
+            request.Method = "GET";
+            JsonValue jsonDoc = null;
+
+            using (WebResponse response = await request.GetResponseAsync())
+            {
+                using (Stream stream = response.GetResponseStream())
+                {
+                    try
+                    {
+                        jsonDoc = await Task.Run(() => JsonObject.Load(stream));
+                    }
+                    catch (System.ArgumentException)
+                    {
+                        
+                    }
+                }
+            }
+
+            JsonObject jsonObject = jsonDoc as JsonObject;
             double money = Convert.ToDouble(costField.Text);
             string currentMonthDBActual = "";
             string currentMonthDBGoal = "";
             string sMonth = DateTime.Now.ToString("MM");
             int dayAmount = 31;
-            switch (sMonth)
+            goals = goals.ParseJSON(goals, jsonObject);
+            /*switch (sMonth)
             {
                 case "01":
                     goals.jan = ((float)jsonObject[currentMonthDBGoal]);
@@ -149,15 +222,14 @@ namespace ServiceTrackerApp
                 case "12":
                     goals.dec = ((float)jsonObject[currentMonthDBGoal]);
                     break;
-            }
-            goals.dailyactual = ((float)jsonObject["dailyactual"]);
-            goals.ytdactual = ((float)jsonObject["ytdactual"]);
+            }*/
             return goals;
         }
     
-        private async void UpdateGoalsAsync(string url)
+        private async void PushJobAsync(string url)
         {
-            
+            Goals goals = new Goals();
+
         }
 
         private async void PostJobAsync(string url)

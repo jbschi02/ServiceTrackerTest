@@ -188,10 +188,14 @@
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/ServiceTrackerApp.pdb
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/ServiceTrackerApp.dll.config
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/FormsViewGroup.pdb
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/FormsViewGroup.dll.mdb
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Core.xml
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/BouncyCastle.Crypto.xml
 /Users/Gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Newtonsoft.Json.xml
