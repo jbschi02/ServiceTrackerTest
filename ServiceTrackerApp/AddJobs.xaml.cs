@@ -102,7 +102,7 @@ namespace ServiceTrackerApp
             else 
             {
                 string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.jobs";
-                //PostJobAsync(url);
+                PostJobAsync(url);
 
                 Goals goals = new Goals();
                 goals = await ParseJSONToGoals(goals);
