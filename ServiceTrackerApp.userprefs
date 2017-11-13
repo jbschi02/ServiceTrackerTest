@@ -1,19 +1,18 @@
 ﻿<Properties StartupConfiguration="{BB604CC9-9DE9-4CCC-82F7-4A1F3F8C8037}|Default">
-  <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.950EC8AB-5C15-4A1B-8C57-9B748B19B907" />
+  <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.58093236-9991-44FC-A1DE-2DEF3DC1E25F" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ServiceTrackerTest.git Status">
     <Files>
-      <File FileName="ServiceTrackerApp/Goals.cs" Line="89" Column="26" />
-      <File FileName="ServiceTrackerApp/AddJobs.xaml.cs" Line="121" Column="76" />
-      <File FileName="ServiceTrackerApp/DTDView.xaml.cs" Line="220" Column="21" />
-      <File FileName="ServiceTrackerApp/Employee_Login.xaml.cs" Line="106" Column="29" />
-      <File FileName="ServiceTrackerApp/YTDView.xaml.cs" Line="45" Column="57" />
-      <File FileName="ServiceTrackerApp/IRestService.cs" Line="1" Column="1" />
+      <File FileName="ServiceTrackerApp/AddJobs.xaml.cs" Line="128" Column="49" />
+      <File FileName="ServiceTrackerApp/Goals.cs" Line="90" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
       <File FileName="ServiceTrackerTest.git Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/AddJobs.xaml.cs" relfile="ServiceTrackerApp/AddJobs.xaml.cs" line="116" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

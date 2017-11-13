@@ -82,11 +82,55 @@ namespace ServiceTrackerApp
             goals.octActual = (float)jsonObject["octActual"];
             goals.novActual = (float)jsonObject["novActual"];
             goals.decActual = (float)jsonObject["decActual"];
-            goals.ytd = (float)jsonObject["ytf"];
+            goals.ytd = (float)jsonObject["ytd"];
             goals.ytdactual = (float)jsonObject["ytdactual"];
             goals.tid = (string)jsonObject["tid"];
 
             return goals;
+        }
+
+        public void addToMonthlyActual(float revenue)
+        {
+            string sMonth = DateTime.Now.ToString("MM");
+            switch (sMonth)
+            {
+                case "01":
+                    this.janActual += revenue;
+                    break;
+                case "02":
+                    this.febActual += revenue;
+                    break;
+                case "03":
+                    this.marActual += revenue;
+                    break;
+                case "04":
+                    this.aprActual += revenue;
+                    break;
+                case "05":
+                    this.mayActual += revenue;
+                    break;
+                case "06":
+                    this.junActual += revenue;
+                    break;
+                case "07":
+                    this.julActual += revenue;
+                    break;
+                case "08":
+                    this.augActual += revenue;
+                    break;
+                case "09":
+                    this.sepActual += revenue;
+                    break;
+                case "10":
+                    this.octActual += revenue;
+                    break;
+                case "11":
+                    this.novActual += revenue;
+                    break;
+                case "12":
+                    this.decActual += revenue;
+                    break;
+            }
         }
     }
 }

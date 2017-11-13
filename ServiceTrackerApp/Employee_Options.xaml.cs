@@ -13,7 +13,6 @@ namespace ServiceTrackerApp
         {
             NavigationPage.SetHasBackButton(this, false);
             Children.Add(new AddJobs(tid));
-
             Children.Add(new ViewGoals(tid));
 
             InitializeComponent();

@@ -102,11 +102,14 @@ namespace ServiceTrackerApp
             else 
             {
                 string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.jobs";
-                PostJobAsync(url);
+                //PostJobAsync(url);
+
                 Goals goals = new Goals();
                 goals = await ParseJSONToGoals(goals);
                 goals.dailyactual += (float)Convert.ToDouble(costField.Text);
                 goals.ytdactual += (float)Convert.ToDouble(costField.Text);
+                goals.addToMonthlyActual((float)Convert.ToDouble(costField.Text));
+                PutGoalsAsync(goals);
                 custNameField.Text = String.Empty;
                 costField.Text = String.Empty;
                 Opportunity.SelectedItem = null;
@@ -226,10 +229,24 @@ namespace ServiceTrackerApp
             return goals;
         }
     
-        private async void PushJobAsync(string url)
+        private async void PutGoalsAsync(Goals goals)
         {
-            Goals goals = new Goals();
+            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.goals/";
+            url += this.tid;
+            var client = new HttpClient();
+            var content = new StringContent(JsonConvert.SerializeObject(goals), Encoding.UTF8, "application/json");
+            var result = await client.PutAsync(url, content);
+            if (result.IsSuccessStatusCode)
+            {
+                System.Diagnostics.Debug.WriteLine("goals successfully updated");
+                //await DisplayAlert("Success!", "The Job Has Been Added", "OK");
+            }
 
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("FAILED with response code: {0}", result);
+                //await DisplayAlert("Failed!", "The Job Has Not Been Added", "OK");
+            }
         }
 
         private async void PostJobAsync(string url)
