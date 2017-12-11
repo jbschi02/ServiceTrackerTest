@@ -23,7 +23,7 @@
                 <Picker x:Name= "Opportunity" Margin = "30, 5, 30, 20" Title = "Opportunity" SelectedIndex = "1" SelectedIndexChanged = "Handle_SelectedIndexChanged">
                 </Picker>
 
-                <Entry x:Name = "ageField" Keyboard = "Numeric" Margin = "30,5,30,20" Placeholder = "Age" IsVisible = "false" >
+                <Entry x:Name = "ageField" Keyboard = "Numeric" Margin = "30,5,30,20" Placeholder = "Age" BackgroundColor = "White" IsVisible = "false" >
                 </Entry>
 
                 <Picker x:Name = "quoteField"  Margin = "30,5,30,20" Title = "Quote" SelectedIndex = "0"  IsVisible = "false" SelectedIndexChanged = "Handle_SelectedIndexChanged2">
@@ -32,7 +32,7 @@
                 <Picker x:Name = "jobType" Margin = "30,5,30,20" Title = "Job Type" IsVisible = "false" >
                 </Picker>
 
-                <Entry x:Name = "quoteAmount" Margin = "30,5,30,20" Keyboard = "Numeric" Placeholder = "Quote Amount" IsVisible = "false">
+                <Entry x:Name = "quoteAmount" Margin = "30,5,30,20" Keyboard = "Numeric" BackgroundColor = "White" Placeholder = "Quote Amount" IsVisible = "false">
                 </Entry>
 
                 <Picker x:Name = "opportunityStatus" Margin = "30,5,30,20" Title = "Opportunity Status" IsVisible = "false">

@@ -14,7 +14,8 @@ namespace ServiceTrackerApp
         public string ServiceType { get; set; }
 
         public string tid { get; set; }
-        }
-    }
 
+
+    }
+}
 

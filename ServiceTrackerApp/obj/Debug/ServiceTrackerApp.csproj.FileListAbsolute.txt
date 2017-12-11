@@ -135,7 +135,6 @@
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csproj.App.config
-/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csprojResolveAssemblyReference.cache
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csproj.CoreCompileInputs.cache
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.App.xaml.g.cs
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.ServiceTrackerAppPage.xaml.g.cs
@@ -150,5 +149,7 @@
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.MTDView.xaml.g.cs
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.DTDView.xaml.g.cs
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.YTDView.xaml.g.cs
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.ChangePassword.xaml.g.cs
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.dll
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.pdb
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/obj/Debug/ServiceTrackerApp.csprojResolveAssemblyReference.cache

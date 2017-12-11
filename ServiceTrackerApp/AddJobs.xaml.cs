@@ -104,6 +104,12 @@ namespace ServiceTrackerApp
                 string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.jobs";
                 PostJobAsync(url);
 
+                if (Opportunity.SelectedIndex == 0)
+                {
+                    string url2 = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.opportunity/";
+                    PostOpportunityAsync(url2);
+                }
+
                 Goals goals = new Goals();
                 goals = await ParseJSONToGoals(goals);
                 goals.dailyactual += (float)Convert.ToDouble(costField.Text);
@@ -114,6 +120,14 @@ namespace ServiceTrackerApp
                 costField.Text = String.Empty;
                 Opportunity.SelectedItem = null;
                 ServiceType.SelectedItem = null;
+                ageField.Text = String.Empty;
+                quoteAmount.Text = String.Empty;
+                opportunityStatus.SelectedItem = null;
+                jobType.SelectedItem = null;
+                Opportunity.SelectedItem = null;
+                quoteField.SelectedItem = null;
+
+
 
             }
         }
@@ -144,6 +158,34 @@ namespace ServiceTrackerApp
             return false;
         }
 
+        private async Task<bool> CheckOppID (int num)
+        {
+            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.opportunity/";
+            url += num.ToString();
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
+            request.ContentType = "application/json";
+            request.Method = "GET";
+            JsonValue jsonDoc = null;
+
+            using (WebResponse response = await request.GetResponseAsync())
+            {
+                using (Stream stream = response.GetResponseStream())
+                {
+                    try
+                    {
+                        jsonDoc = await Task.Run(() => JsonObject.Load(stream));
+                    }
+                    catch (System.ArgumentException)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+
+
+        }
+
 
 
 
@@ -153,6 +195,14 @@ namespace ServiceTrackerApp
             int newID = rand.Next(0, 2000000000);
 
             return newID;
+        }
+
+        private int GetRand2()
+        {
+            Random rand = new Random();
+            int oppID = rand.Next(0, 2000000000);
+
+            return oppID;
         }
 
 
@@ -181,11 +231,6 @@ namespace ServiceTrackerApp
             }
 
             JsonObject jsonObject = jsonDoc as JsonObject;
-            double money = Convert.ToDouble(costField.Text);
-            string currentMonthDBActual = "";
-            string currentMonthDBGoal = "";
-            string sMonth = DateTime.Now.ToString("MM");
-            int dayAmount = 31;
             goals = goals.ParseJSON(goals, jsonObject);
             /*switch (sMonth)
             {
@@ -249,9 +294,79 @@ namespace ServiceTrackerApp
             }
         }
 
+        public bool IsOpportunity ()
+        {
+            if (Opportunity.SelectedIndex == 0)
+            {
+                return true;
+            }
+
+            else {
+                return false;
+            }
+
+        }
+
+        public bool IsQuote ()
+        {
+            if (quoteField.SelectedIndex == 0)
+            {
+                return true;
+            }
+
+            else {
+                return false;
+            }
+        }
+
+        public bool isClosed()
+        {
+            if (opportunityStatus.SelectedIndex == 0)
+            {
+                return false;
+            }
+
+            else {
+                return true;
+            }
+        }
+
+        private async void PostOpportunityAsync(string url)
+        {
+            int ageAmount = Convert.ToInt32(ageField.Text);
+            double quoteValue = Convert.ToDouble(quoteAmount.Text);
+            var client = new HttpClient();
+            int newOppId = GetRand2();
+
+            var opportunity = new Opportunity
+            {
+                age = ageAmount,
+                quoteamount = quoteValue,
+                quoteGiven = true,
+                isClosed = false,
+                custname = custNameField.Text,
+                tid = this.tid,
+                oppid = newOppId,
+                date = DateTime.Now,
+                equipmenttype = jobType.SelectedItem.ToString()
+
+            };
+
+            do
+            {
+                newOppId = GetRand2();
+            } while (!await CheckOppID(newOppId));
+
+            var content = new StringContent(JsonConvert.SerializeObject(opportunity), Encoding.UTF8, "application/json");
+            var result = await client.PostAsync(url, content);
+
+
+        }
+
         private async void PostJobAsync(string url)
         {
             double money = Convert.ToDouble(costField.Text);
+
             int newJobId = GetRand();
             var client = new HttpClient();
             var job = new Jobs
@@ -262,6 +377,7 @@ namespace ServiceTrackerApp
                 tid = this.tid,
                 JobID = newJobId,
                 ServiceType = ServiceType.SelectedItem.ToString()
+                                         
             };
 
             do
