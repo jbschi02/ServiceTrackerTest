@@ -19,7 +19,7 @@ namespace ServiceTrackerApp
 {
     public partial class Employee_Login : ContentPage
     {
-
+        public User globalUser = new User();
         public Employee_Login()
 
         {
@@ -27,6 +27,11 @@ namespace ServiceTrackerApp
             InitializeComponent();
            
         }
+        async public void Handle_Clicked2(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new ChangePassword());
+        }
+
 
         async public void Handle_Clicked(object sender, System.EventArgs e)
         {
@@ -44,9 +49,14 @@ namespace ServiceTrackerApp
                     //App.Current.MainPage = new Employee_Options(usernameField.Text);
                     //await Navigation.PushAsync(new GetTest());
 
-                    
-                    await Navigation.PushAsync(new Employee_Options(usernameField.Text));
-
+                    if (!this.globalUser.getHasLoggedIn())
+                    {
+                        await Navigation.PushAsync(new ChangePassword());
+                    }
+                    else
+                    {
+                        await Navigation.PushAsync(new Employee_Options(usernameField.Text));
+                    }
                 }
                 else
                 {
@@ -55,9 +65,13 @@ namespace ServiceTrackerApp
             }
         }
 
+       
+       
+
+
         async Task<bool> CheckValidLogin(string username, string password)
         {
-			string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.users/";
+            string url = "http://capstone1.cecsresearch.org:8080/ServiceTrackerFinal/webresources/entityclasses.users/";
 			url += username;
 			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
 			request.ContentType = "application/json";
@@ -71,7 +85,7 @@ namespace ServiceTrackerApp
 					try
 					{
 						jsonDoc = await Task.Run(() => JsonObject.Load(stream));
-					}
+                    }
 					catch (System.ArgumentException)
 					{
                         return false;
@@ -107,7 +121,12 @@ namespace ServiceTrackerApp
             user.setisManager((bool)jsonObject["manager"]);
             user.setpasswordHash((string)jsonObject["passwordHash"]);
             user.setpasswordSalt((string)jsonObject["salt"]);
+            user.setEmail((string)jsonObject["email"]);
+            user.setisOwner((bool)jsonObject["isOwner"]);
+            user.setHasLoggedIn((bool)jsonObject["hasLoggedIn"]);
 
+
+            this.globalUser = user;
             return user;
         }
 

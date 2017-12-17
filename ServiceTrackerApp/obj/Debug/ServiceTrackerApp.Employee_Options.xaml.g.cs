@@ -11,8 +11,8 @@
 namespace ServiceTrackerApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/Em" +
-        "ployee_Options.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/Employee" +
+        "_Options.xaml")]
     public partial class Employee_Options : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

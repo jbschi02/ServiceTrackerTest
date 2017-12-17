@@ -26,6 +26,9 @@
                 <Entry x:Name = "ageField" Keyboard = "Numeric" Margin = "30,5,30,20" Placeholder = "Age" BackgroundColor = "White" IsVisible = "false" >
                 </Entry>
 
+                <Picker x:Name = "brandField" Margin="30,5,30,20" Title="Brand" IsVisible="false">
+                </Picker>
+                
                 <Picker x:Name = "quoteField"  Margin = "30,5,30,20" Title = "Quote" SelectedIndex = "0"  IsVisible = "false" SelectedIndexChanged = "Handle_SelectedIndexChanged2">
                 </Picker>
 

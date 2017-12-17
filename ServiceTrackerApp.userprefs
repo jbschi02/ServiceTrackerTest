@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{BB604CC9-9DE9-4CCC-82F7-4A1F3F8C8037}|Default">
-  <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7E7F92EE-A45F-4DCA-85CE-0074735CA649" />
+  <MonoDevelop.Ide.ItemProperties.ServiceTrackerApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0DF0C6E4-E101-4E88-83DD-FAB6707405AC" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ServiceTrackerTest.git Status">
     <Files>
-      <File FileName="ServiceTrackerApp/Goals.cs" Line="90" Column="1" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="ServiceTrackerApp/Jobs.cs" Line="10" Column="9" />
-      <File FileName="ServiceTrackerApp/Opportunity.cs" Line="22" Column="26" />
-      <File FileName="ServiceTrackerApp/ChangePassword.xaml" Line="22" Column="1" />
-      <File FileName="ServiceTrackerApp/Employee_Login.xaml" Line="23" Column="1" />
-      <File FileName="ServiceTrackerApp/ChangePassword.xaml.cs" Line="1" Column="1" />
-      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.0.11/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="635" Column="3" />
+      <File FileName="ServiceTrackerApp/ForgotPassword.xaml" Line="17" Column="24" />
+      <File FileName="ServiceTrackerApp/ChangePassword.xaml" Line="26" Column="22" />
+      <File FileName="ServiceTrackerApp/ChangePassword.xaml.cs" Line="38" Column="18" />
+      <File FileName="ServiceTrackerApp/ForgotPassword.xaml.cs" Line="128" Column="3" />
       <File FileName="ServiceTrackerTest.git Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

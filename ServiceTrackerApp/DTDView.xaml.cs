@@ -109,13 +109,12 @@ namespace ServiceTrackerApp
             string currentMonthDBActual = "";
             string currentMonthDBGoal = "";
             string sMonth = DateTime.Now.ToString("MM");
-            int dayAmount = 31;
+            int dayAmount = 20;
             switch (sMonth)
             {
                 case "01":
                     currentMonthDBActual = "janActual";
                     currentMonthDBGoal = "jan";
-                    dayAmount = 31;
                     goals.jan = ((float)jsonObject[currentMonthDBGoal]);
                     goals.janActual= ((float)jsonObject[currentMonthDBActual]);
 
@@ -124,7 +123,6 @@ namespace ServiceTrackerApp
                 case "02":
                     currentMonthDBActual = "febActual";
                     currentMonthDBGoal = "feb";
-                    dayAmount = 28;
                             goals.feb = ((float)jsonObject[currentMonthDBGoal]);
                             goals.febActual = ((float)jsonObject[currentMonthDBActual]);
 
@@ -134,7 +132,6 @@ namespace ServiceTrackerApp
                 case "03":
                     currentMonthDBActual = "marActual";
                     currentMonthDBGoal = "mar";
-                    dayAmount = 31;
 
                             goals.mar = ((float)jsonObject[currentMonthDBGoal]);
                             goals.marActual = ((float)jsonObject[currentMonthDBActual]);
@@ -144,7 +141,6 @@ namespace ServiceTrackerApp
                 case "04":
                     currentMonthDBActual = "aprActual";
                     currentMonthDBGoal = "apr";
-                    dayAmount = 30;
                             goals.apr = ((float)jsonObject[currentMonthDBGoal]);
                             goals.aprActual = ((float)jsonObject[currentMonthDBActual]);
 
@@ -153,7 +149,6 @@ namespace ServiceTrackerApp
                 case "05":
                     currentMonthDBActual = "mayActual";
                     currentMonthDBGoal = "may";
-                    dayAmount = 31;
 
                             goals.may = ((float)jsonObject[currentMonthDBGoal]);
                             goals.mayActual = ((float)jsonObject[currentMonthDBActual]);
@@ -163,7 +158,6 @@ namespace ServiceTrackerApp
                 case "06":
                     currentMonthDBActual = "junActual";
                     currentMonthDBGoal = "jun";
-                    dayAmount = 30;
 
                             goals.jun = ((float)jsonObject[currentMonthDBGoal]);
                             goals.junActual = ((float)jsonObject[currentMonthDBActual]);
@@ -173,7 +167,6 @@ namespace ServiceTrackerApp
                 case "07":
                     currentMonthDBActual = "julActual";
                     currentMonthDBGoal = "jul";
-                    dayAmount = 31;
 
                             goals.jul = ((float)jsonObject[currentMonthDBGoal]);
                             goals.julActual = ((float)jsonObject[currentMonthDBActual]);
@@ -183,8 +176,6 @@ namespace ServiceTrackerApp
                 case "08":
                     currentMonthDBActual = "augActual";
                     currentMonthDBGoal = "aug";
-                    dayAmount = 31;
-
                             goals.aug = ((float)jsonObject[currentMonthDBGoal]);
                             goals.augActual = ((float)jsonObject[currentMonthDBActual]);
 
@@ -193,7 +184,6 @@ namespace ServiceTrackerApp
                 case "09":
                     currentMonthDBActual = "sepActual";
                     currentMonthDBGoal = "sep";
-                    dayAmount = 30;
 
                             goals.sep = ((float)jsonObject[currentMonthDBGoal]);
                             goals.sepActual = ((float)jsonObject[currentMonthDBActual]);
@@ -203,7 +193,6 @@ namespace ServiceTrackerApp
                 case "10":
                     currentMonthDBActual = "octActual";
                     currentMonthDBGoal = "oct";
-                    dayAmount = 31;
 
                             goals.oct = ((float)jsonObject[currentMonthDBGoal]);
                             goals.octActual = ((float)jsonObject[currentMonthDBActual]);
@@ -213,7 +202,6 @@ namespace ServiceTrackerApp
                 case "11":
                     currentMonthDBActual = "novActual";
                     currentMonthDBGoal = "nov";
-                    dayAmount = 30;
 
                             goals.nov = ((float)jsonObject[currentMonthDBGoal]);
                             goals.novActual = ((float)jsonObject[currentMonthDBActual]);
@@ -223,7 +211,6 @@ namespace ServiceTrackerApp
                 case "12":
                     currentMonthDBActual = "decActual";
                     currentMonthDBGoal = "dec";
-                    dayAmount = 31;
 
                             goals.dec = ((float)jsonObject[currentMonthDBGoal]);
                             goals.decActual = ((float)jsonObject[currentMonthDBActual]);

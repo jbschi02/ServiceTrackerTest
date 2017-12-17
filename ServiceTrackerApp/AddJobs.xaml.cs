@@ -28,18 +28,41 @@ namespace ServiceTrackerApp
         {
             NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
-            ServiceType.Items.Add("Demand Service");             ServiceType.Items.Add("Maintenance");             ServiceType.Items.Add("Tune-up");             ServiceType.Items.Add("IAQ");             ServiceType.Items.Add("Warranty");             ServiceType.Items.Add("Equipment - Air Handler");             ServiceType.Items.Add("Service Agreement - New");             ServiceType.Items.Add("Service Agreement - Renewal");             ServiceType.Items.Add("Equpipment - AC & Coil");             ServiceType.Items.Add("Equipment - Heat Pump System");             ServiceType.Items.Add("Equipment - Gas Furnance");             ServiceType.Items.Add("Equipment - Packaged Unit");             ServiceType.Items.Add("Equipment - Geothermal");
+            ServiceType.Items.Add("Demand Service");             ServiceType.Items.Add("Maintenance");             ServiceType.Items.Add("Tune-up");             ServiceType.Items.Add("IAQ");             ServiceType.Items.Add("Warranty");             ServiceType.Items.Add("Equipment - Air Handler");             ServiceType.Items.Add("Service Agreement - New");             ServiceType.Items.Add("Service Agreement - Renewal");             ServiceType.Items.Add("Equipment - AC & Coil");             ServiceType.Items.Add("Equipment - Heat Pump System");             ServiceType.Items.Add("Equipment - Gas Furnance");             ServiceType.Items.Add("Equipment - Packaged Unit");             ServiceType.Items.Add("Equipment - Geothermal");
 
             jobType.Items.Add("Demand Service");
             jobType.Items.Add("Maintenance");
             jobType.Items.Add("IAQ");
             jobType.Items.Add("Equipment - Air Handler");
             jobType.Items.Add("Service Agreement - New");
-            jobType.Items.Add("Equpipment - AC & Coil");
+            jobType.Items.Add("Equipment - AC & Coil");
             jobType.Items.Add("Equipment - Heat Pump System");
             jobType.Items.Add("Equipment - Gas Furnance");
             jobType.Items.Add("Equipment - Packaged Unit");
             jobType.Items.Add("Equipment - Geothermal");
+
+            brandField.Items.Add("Carrier");
+            brandField.Items.Add("Trane");
+            brandField.Items.Add("Goodman");
+            brandField.Items.Add("Bryant");
+            brandField.Items.Add("American Standard");
+            brandField.Items.Add("Rheem");
+            brandField.Items.Add("York");
+            brandField.Items.Add("Lennox");
+            brandField.Items.Add("Heil");
+            brandField.Items.Add("Tempstar");
+            brandField.Items.Add("Rudd");
+            brandField.Items.Add("Amana");
+            brandField.Items.Add("Payne");
+            brandField.Items.Add("Fraser Johnson");
+            brandField.Items.Add("Luxaire");
+            brandField.Items.Add("Westinghouse");
+            brandField.Items.Add("Coleman");
+            brandField.Items.Add("Duncane");
+            brandField.Items.Add("Armstrong");
+            brandField.Items.Add("Other");
+
+                      
 
 
             Opportunity.Items.Add("Yes");
@@ -60,12 +83,14 @@ namespace ServiceTrackerApp
             {
                 ageField.IsVisible = true;
                 quoteField.IsVisible = true;
+                brandField.IsVisible = true;
             }
 
             else
             {
                 ageField.IsVisible = false;
                 quoteField.IsVisible = false;
+                brandField.IsVisible = false;
             }
         }
 
@@ -126,6 +151,7 @@ namespace ServiceTrackerApp
                 jobType.SelectedItem = null;
                 Opportunity.SelectedItem = null;
                 quoteField.SelectedItem = null;
+                brandField.SelectedItem = null;
 
 
 
@@ -337,6 +363,7 @@ namespace ServiceTrackerApp
             double quoteValue = Convert.ToDouble(quoteAmount.Text);
             var client = new HttpClient();
             int newOppId = GetRand2();
+            System.Diagnostics.Debug.WriteLine(DateTime.Now.ToString());
 
             var opportunity = new Opportunity
             {
@@ -347,8 +374,11 @@ namespace ServiceTrackerApp
                 custname = custNameField.Text,
                 tid = this.tid,
                 oppid = newOppId,
-                date = DateTime.Now,
-                equipmenttype = jobType.SelectedItem.ToString()
+                date = DateTime.UtcNow,
+                equipmenttype = jobType.SelectedItem.ToString(),
+                brand = brandField.SelectedItem.ToString()
+                                  
+                                       
 
             };
 
@@ -373,7 +403,7 @@ namespace ServiceTrackerApp
             {
                 Custname = custNameField.Text,
                 Cost = money,
-                Date = DateTime.Now,
+                    Date = DateTime.UtcNow,
                 tid = this.tid,
                 JobID = newJobId,
                 ServiceType = ServiceType.SelectedItem.ToString()
