@@ -42,7 +42,7 @@
             <Label Text = "Actual" Grid.Row = "1" Grid.Column = "0"  HorizontalTextAlignment = "Center" TextColor = "White">
             </Label>
 
-            <Label x:Name ="ActualLabel" Text = "$" Grid.Row = "1" Grid.Column = "0" VerticalTextAlignment = "Center" HorizontalTextAlignment = "Center" TextColor = "White" FontSize = "35">
+            <Label x:Name ="ActualLabel" Text = "$" Grid.Row = "1" Grid.Column = "0" VerticalTextAlignment = "Center" HorizontalTextAlignment = "Center" TextColor = "White" FontSize = "30">
             </Label>
 
             <BoxView Color = "Navy" Grid.Row = "1" Grid.Column = "1">
@@ -51,7 +51,7 @@
             <Label Text = "Goal" Grid.Row = "1" Grid.Column = "1" HorizontalTextAlignment = "Center" TextColor = "White">
             </Label>
 
-            <Label x:Name = "GoalLabel" Text = "$" Grid.Row = "1" Grid.Column = "1" VerticalTextAlignment = "Center" HorizontalTextAlignment = "Center" TextColor = "White" FontSize = "35">
+            <Label x:Name = "GoalLabel" Text = "$" Grid.Row = "1" Grid.Column = "1" VerticalTextAlignment = "Center" HorizontalTextAlignment = "Center" TextColor = "White" FontSize = "30">
             </Label>
 
            <ProgressBar x:Name ="ProgressBar" Grid.Row = "3" Grid.ColumnSpan = "2" Progress = "0.5" WidthRequest = "300" HeightRequest = "75">
@@ -75,7 +75,13 @@
             <Label x:Name = "numOpp" Text = "#" Grid.Row = "6" HorizontalTextAlignment = "End"> 
             </Label>
 
-            <Button Text = "Sync Now" Grid.Row = "7" BackgroundColor = "Gray" TextColor = "White" Grid.ColumnSpan = "2" Margin = "30" Clicked = "Handle_Clicked">
+            <Label Text = "Monthly Commissions:" Grid.Row = "7" Grid.Column = "0" Font = "15" HorizontalTextAlignment = "Start">
+            </Label>
+
+            <Label x:Name = "commissionsTotal" Text = "#" Grid.Row = "7" Grid.Column = "1" HorizontalTextAlignment = "End"> 
+            </Label>
+
+            <Button Text = "Sync Now" Grid.Row = "9" BackgroundColor = "Gray" TextColor = "White" Grid.ColumnSpan = "2" Margin = "30">
             </Button>
 
             

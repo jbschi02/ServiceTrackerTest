@@ -11,8 +11,8 @@
 namespace ServiceTrackerApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/App.xaml" +
-        "")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/Ap" +
+        "p.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

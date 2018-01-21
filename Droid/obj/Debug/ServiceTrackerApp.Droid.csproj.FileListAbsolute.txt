@@ -90,11 +90,15 @@
 /Users/johnschieman/Downloads/ServiceTrackerApp 2/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
 /Users/johnschieman/Downloads/ServiceTrackerApp 2/Droid/obj/Debug/R.cs.flag
 /Users/johnschieman/Downloads/ServiceTrackerApp 2/Droid/obj/Debug/uploadflags.txt
+/Users/gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/obj/Debug/ServiceTrackerApp.Droid.csprojResolveAssemblyReference.cache
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/ServiceTrackerApp.Droid.dll
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/ServiceTrackerApp.Droid.pdb
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/com.servicetracker.ServiceTracker.apk
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/com.servicetracker.ServiceTracker-Signed.apk
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/BouncyCastle.dll
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/FormsViewGroup.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/MailKit.dll
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/MimeKit.dll
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/ServiceTrackerApp.dll
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Android.Arch.Core.Common.dll
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Android.Arch.Lifecycle.Common.dll
@@ -135,6 +139,8 @@
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/MimeKit.xml
+/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/MailKit.xml
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/BouncyCastle.Crypto.xml
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/bin/Debug/Newtonsoft.Json.xml
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/obj/Debug/ServiceTrackerApp.Droid.csprojResolveAssemblyReference.cache
@@ -152,4 +158,3 @@
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/obj/Debug/res/drawable/ic_visibility1.png
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/obj/Debug/R.cs.flag
 /Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/Droid/obj/Debug/uploadflags.txt
-/Users/gargai/Projects/jbschi02/ServiceTrackerTest.git/Droid/obj/Debug/ServiceTrackerApp.Droid.csprojResolveAssemblyReference.cache

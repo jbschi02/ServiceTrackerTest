@@ -11,8 +11,8 @@
 namespace ServiceTrackerApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gargai/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/Manager_" +
-        "Login.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/johnschieman/Projects/jbschi02/ServiceTrackerTest.git/ServiceTrackerApp/Ma" +
+        "nager_Login.xaml")]
     public partial class Manager_Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

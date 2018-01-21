@@ -44,11 +44,12 @@ namespace ServiceTrackerApp
 
             float RemainingGoal;
 
-            GoalText.Text = "$"+(this.monthlyGoal - this.monthlyGoalActual).ToString();
+            GoalText.Text = "$" + string.Format("{0:#.00}", Convert.ToDecimal((this.monthlyGoal - this.monthlyGoalActual).ToString()));
             RemainingGoal = (this.monthlyGoalActual / this.monthlyGoal);
 
-            ActualLabel.Text = "$" + this.monthlyGoalActual.ToString();
+            ActualLabel.Text = "$" + string.Format("{0:#.00}", Convert.ToDecimal(this.monthlyGoalActual.ToString()));
             GoalLabel.Text = "$" + this.monthlyGoal.ToString();
+            commissionsTotal.Text = "$" + string.Format("{0:#.00}", Convert.ToDecimal(this.goals.comTotalDollarsMonth.ToString()));
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -101,6 +102,7 @@ namespace ServiceTrackerApp
         private Goals ParseJSONToGoals(JsonValue json, Goals goals)
         {
             JsonObject jsonObject = json as JsonObject;
+            goals.comTotalDollarsMonth = ((float)jsonObject["comTotalDollarsMonth"]);
             string currentMonthDBActual = "";
             string currentMonthDBGoal = "";
             string sMonth = DateTime.Now.ToString("MM");

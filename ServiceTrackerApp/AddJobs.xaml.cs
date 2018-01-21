@@ -28,7 +28,8 @@ namespace ServiceTrackerApp
         {
             NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
-            ServiceType.Items.Add("Demand Service");             ServiceType.Items.Add("Maintenance");             ServiceType.Items.Add("Tune-up");             ServiceType.Items.Add("IAQ");             ServiceType.Items.Add("Warranty");             ServiceType.Items.Add("Equipment - Air Handler");             ServiceType.Items.Add("Service Agreement - New");             ServiceType.Items.Add("Service Agreement - Renewal");             ServiceType.Items.Add("Equipment - AC & Coil");             ServiceType.Items.Add("Equipment - Heat Pump System");             ServiceType.Items.Add("Equipment - Gas Furnance");             ServiceType.Items.Add("Equipment - Packaged Unit");             ServiceType.Items.Add("Equipment - Geothermal");
+            ServiceType.Items.Add("Demand Service");             ServiceType.Items.Add("Maintenance");             ServiceType.Items.Add("Tune-up");             ServiceType.Items.Add("IAQ");             ServiceType.Items.Add("Warranty");             ServiceType.Items.Add("Service Agreement - New");             ServiceType.Items.Add("Service Agreement - Renewal");
+            ServiceType.Items.Add("Equipment - Air Handler");             ServiceType.Items.Add("Equipment - AC & Coil");             ServiceType.Items.Add("Equipment - Heat Pump System");             ServiceType.Items.Add("Equipment - Gas Furnance");             ServiceType.Items.Add("Equipment - Packaged Unit");             ServiceType.Items.Add("Equipment - Geothermal");
 
             jobType.Items.Add("Demand Service");
             jobType.Items.Add("Maintenance");
@@ -140,6 +141,28 @@ namespace ServiceTrackerApp
                 goals.dailyactual += (float)Convert.ToDouble(costField.Text);
                 goals.ytdactual += (float)Convert.ToDouble(costField.Text);
                 goals.addToMonthlyActual((float)Convert.ToDouble(costField.Text));
+
+                if (ServiceType.SelectedIndex == 3 || ServiceType.SelectedIndex > 6)
+                {
+                    goals.comTotalDollars += (float)((goals.comEquipment / 100) * Convert.ToDouble(costField.Text));
+                    goals.comTotalDollarsMonth += (float)((goals.comEquipment / 100) * Convert.ToDouble(costField.Text));
+                }
+                else if (ServiceType.SelectedIndex == 0)
+                {
+                    goals.comTotalDollars += (float)((goals.comDemand / 100) * Convert.ToDouble(costField.Text));
+                    goals.comTotalDollarsMonth += (float)((goals.comDemand / 100) * Convert.ToDouble(costField.Text));
+                }
+                else if (ServiceType.SelectedIndex == 5)
+                {
+                    goals.comTotalDollars += goals.comServNew;
+                    goals.comTotalDollarsMonth += goals.comServNew;
+                }
+                else if (ServiceType.SelectedIndex == 6)
+                {
+                    goals.comTotalDollars += goals.comServRenew;
+                    goals.comTotalDollarsMonth += goals.comServRenew;
+                }
+
                 PutGoalsAsync(goals);
                 custNameField.Text = String.Empty;
                 costField.Text = String.Empty;
@@ -378,8 +401,6 @@ namespace ServiceTrackerApp
                 equipmenttype = jobType.SelectedItem.ToString(),
                 brand = brandField.SelectedItem.ToString()
                                   
-                                       
-
             };
 
             do

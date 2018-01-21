@@ -40,6 +40,10 @@ namespace ServiceTrackerApp
             float RemainingGoal;
             double remaining = this.goals.daily - this.goals.dailyactual;
             string remainingString = string.Format("{0:.00}", remaining);
+            if (remaining < 0)
+            {
+                remainingString = "0";
+            }
 
             GoalText.Text = "$" + remainingString;
 
@@ -150,10 +154,10 @@ namespace ServiceTrackerApp
                     currentMonthDBActual = "mayActual";
                     currentMonthDBGoal = "may";
 
-                            goals.may = ((float)jsonObject[currentMonthDBGoal]);
-                            goals.mayActual = ((float)jsonObject[currentMonthDBActual]);
+                    goals.may = ((float)jsonObject[currentMonthDBGoal]);
+                    goals.mayActual = ((float)jsonObject[currentMonthDBActual]);
 
-                            goals.daily = (goals.may / dayAmount);
+                    goals.daily = (goals.may / dayAmount);
                     break;
                 case "06":
                     currentMonthDBActual = "junActual";

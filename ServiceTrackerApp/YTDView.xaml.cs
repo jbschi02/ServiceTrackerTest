@@ -44,6 +44,7 @@ namespace ServiceTrackerApp
 
             ActualLabel.Text = "$" + this.goals.ytdactual.ToString();
             GoalLabel.Text = "$" + this.goals.ytd.ToString();
+            commissionsTotal.Text = "$" + string.Format("{0:#.00}", Convert.ToDecimal(this.goals.comTotalDollars.ToString()));
 
             ProgressBar.Progress = RemainingGoal;
         }
@@ -97,7 +98,7 @@ namespace ServiceTrackerApp
         {
             JsonObject jsonObject = json as JsonObject;
 
-
+            goals.comTotalDollars = ((float)jsonObject["comTotalDollars"]);
             goals.ytd = ((float)jsonObject["ytd"]);
             goals.ytdactual = ((float)jsonObject["ytdactual"]);
 

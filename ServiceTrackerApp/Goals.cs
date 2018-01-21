@@ -43,6 +43,12 @@ namespace ServiceTrackerApp
         public float ytd { get; set; }
         public float ytdactual { get; set; }
         public string tid { get; set; }
+        public float comEquipment;
+        public float comDemand;
+        public float comServNew;
+        public float comServRenew;
+        public float comTotalDollars;
+        public float comTotalDollarsMonth;
 
         public Goals()
         {
@@ -85,6 +91,12 @@ namespace ServiceTrackerApp
             goals.ytd = (float)jsonObject["ytd"];
             goals.ytdactual = (float)jsonObject["ytdactual"];
             goals.tid = (string)jsonObject["tid"];
+            goals.comDemand = (float)jsonObject["comDemand"];
+            goals.comServNew = (float)jsonObject["comServNew"];
+            goals.comEquipment = (float)jsonObject["comEquipment"];
+            goals.comServRenew = (float)jsonObject["comServRenew"];
+            goals.comTotalDollars = (float)jsonObject["comTotalDollars"];
+            goals.comTotalDollarsMonth = (float)jsonObject["comTotalDollarsMonth"];
 
             return goals;
         }
